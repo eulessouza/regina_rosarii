@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--css-->
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    
+    <!--scripts-->
+    <script defer src="js/main.js"></script>
+    <script src="https://kit.fontawesome.com/869daa3fbc.js" crossorigin="anonymous"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+   
+    <title>Regina Rosarii</title>
+    <link rel="icon" 
+      type="image/png" 
+      href="img/icone.png" />
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img src="img/icone.png" alt="" width="30" height="24">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="proposito.html">Propósito</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://discord.gg/4kk9m58W4n">Discord</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Orações
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="rosario.html">Rosário</a></li>
+                  <li><a class="dropdown-item" href="oracoes-basicas.html">Orações clássicas</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="oracoes-santos.html">Orações a santos</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+   <div class="oracoes-classicas container">
+    <div class="container-fluid mb-4 oracoes-classicas-bg">
+      <h1>Orações Clássicas</h1>
+      <p>Seguem as orações clássicas da Igreja Católica. Sempre ao lado da oração virá a versão em Latim, língua oficial da Igreja, posto que sendo o latim uma língua morta, os significados originais nunca poderão ser alterados por gírias, expressões de época ou interpretações que não estejam conformes à Santa Igreja Católica, que já conta milênios de sua existência.</p>
+    </div>
+    <div class="container mb-4">
+      <form class="d-block">
+        <input type="text" id="entrada" onkeyup="myFunction()" placeholder="Procurar..">
+
+        <ul id="filter-list">
+          <li><a href="#sinal-da-cruz">Sinal da Cruz</a></li>
+          <li><a href="#credo">Credo</a></li>
+          <li><a href="#pai-nosso">Pai nosso</a></li>
+          <li><a href="#ave-maria">Ave Maria</a></li>
+          <li><a href="#gloria">Glória</a></li>
+          <li><a href="#domine-iesu">Oração de Fátima</a></li>
+          <li><a href="#salve-rainha">Salve Rainha</a></li>
+          <li><a href="#ladainha">Ladainha de Nossa Senhora</a></li>
+          <li><a href="#anima-christi">Alma de Cristo</a></li>
+          <li><a href="#angelus">O Anjo do Senhor</a></li>
+          <li><a href="#regina-caeli">Rainha do Céu</a></li>
+        </ul> 
+      </form>
+    </div>
+    <!--div-- class="container-fluid mb-4">
+      <a href="#sinal-da-cruz">
+        <button type="button" class="btn btn-outline-dark">Sinal da Cruz</button>
+      </a>
+      <a href="#credo">
+        <button type="button" class="btn btn-outline-dark">Credo</button>
+      </a>
+      <a href="#pai-nosso">
+        <button type="button" class="btn btn-outline-dark">Pai Nosso</button>
+      </a>
+      <a href="#gloria">
+        <button type="button" class="btn btn-outline-dark">Glória</button>
+      </a>
+      <a href="#domine-iesu">
+        <button type="button" class="btn btn-outline-dark">Oração de Fátima</button>
+      </a>
+      <a href="#salve-rainha">
+        <button type="button" class="btn btn-outline-dark">Salve Rainha</button>
+      </a>
+      <a href="#ladainha">
+        <button type="button" class="btn btn-outline-dark">Ladainha de Nossa Senhora</button>
+      </a>
+      <a href="#anima-christi">
+        <button type="button" class="btn btn-outline-dark">Alma de Cristo</button>
+      </a>
+      <br>
+      <a href="#angelus">
+        <button type="button" class="btn btn-outline-dark">Anjo do Senhor</button>
+      </a>
+    </!--div-->
+    <div id="sinal-da-cruz" class="card lg-3" style="max-width: 1000px;">
+      <div class="row g-0">
+        <div class="col-lg-6 p-xxl-3" style="width: 100%;">
+          <img src="img/cruz.png" class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-6">
+          <div class="card-body">
+            <h5 class="card-title fw-bolder">Sinal da Cruz</h5>
+            <p class="card-text">Pelo sinal da santa cruz, livrai-nos, Deus nosso Senhor, dos nossos inimigos.<br>Em nome do Pai , e do Filho e do Espírito Santo Amém.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card-body">
+            <h5 class="card-title fw-bolder">Per Signun Crucis</h5>
+            <p class="card-text"> 
+            Per signum crucis, de inimicis nostris libera-nos Deus noster.<br>  
+            In nonime Patris et Fílii et Spitiui Sancto. Amen.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div id="credo" class="card lg-3" style="max-width: 1000px;">
+      <div class="row g-0">
+        <div class="col-lg-6 p-xxl-3" style="width: 100%;">
+          <img src="img/apostolos.jpg" class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-6">
+          <div class="card-body">
+            <h5 class="card-title fw-bolder">Credo</h5>
+            <p class="card-text">Creio em Deus Pai todo-poderoso, criador do céu e da terra; e em Jesus Cristo, seu único Filho, Nosso Senhor; que foi concebido pelo poder do Espírito Santo; nasceu na Virgem Maria, padeceu sob Pôncio Pilatos, foi crucificado morto e sepultado; desceu aos infernos; ressuscitou ao terceiro dia; subiu aos céus, está sentado à direita de Deus Pai todo-poderoso, donde há de vir a julgar os vivos e os mortos; creio no Espírito Santo, na santa Igreja Católica, na comunhão dos santos, na remissão dos pecados, na ressurreição da carne, na vida eterna. Amém.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card-body">
+            <h5 class="card-title fw-bolder">Credo</h5>
+            <p class="card-text"> 
+              Credo in Deum, Patrem omnipoténtem, Creatórem caeli et terrae. Et in Jesum Christum, Filium eius únicum, Dóminùm nostrum : qui concéptus est de Spíritu Sancto, natus ex María Virgine, passus sub Pontio Piláto, crucifíxus, mórtuus, et sepúltus : descéndit ad ínferos; tértia die resurréxit a mórtuis; ascéndit ad caelos; sedet ad déxteram Dei Patris omnipoténtis: inde ventúrus est judicare vivos et mórtuos. Credo in Spiritum Sanctum, sanctam Ecclésiam Cathólicam, Sanctórum communionem, remissiónem peccatórum carnis resurrectiónem, vitam aetérnam. Amen. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="pai-nosso" class="card lg-3" style="max-width: 1000px;">
+      <div class="row g-0">
+        <div class="col-lg-6 p-xxl-3" style="width: 100%;">
+          <img src="img/pai-nosso.jpg" class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-6">
+          <div class="card-body">
+            <h5 class="card-title fw-bolder">Pai nosso</h5>
+            <p class="card-text">Pai nosso, que estais nos céus, santificado seja o vosso Nome; venha a nós o Vosso reino; seja feita a Vossa vontade, assim na terra como no céu; o pão nosso de cada dia nos dai hoje; e perdoai-nos as nossas dívidas, assim como nós perdoamos aos nossos devedores; e não nos deixeis cair em tentação; mas livrai-nos do mal. Amém.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card-body">
+            <h5 class="card-title fw-bolder">Pater noster</h5>
+            <p class="card-text"> 
+              Pater noster, qui es in caelis Sanctificétur nomen tuum: Advéniat regnum tuum: Fiat voluntas tua, sicut in caelo, et in terra. Panem nostrum quotidiánum da nobis hódie: Et dimítte nobis débita nostra, sicut et nos dimíttimus debitóribus nostris. Et ne nos indúcas in tentatiónem. 
+
+Sed líbera nos a malo. Amen.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div id="ave-maria" class="card lg-3" style="max-width: 1000px;">
+      <div class="row g-0">
+        <div class="col-lg-6 p-xxl-3" style="width: 100%;">
+          <img src="img/Leonardo_da_Vinci_L_Annunciazione.gif" class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-6">
+          <div class="card-body">
+            <h5 class="card-title fw-bolder">Ave Maria</h5>
+            <p class="card-text">Ave Maria, cheia de graça, o Senhor é convosco; bendita sois vós entre as mulheres e bendito é o fruto do vosso ventre, Jesus. Santa Maria, Mãe de Deus, rogai por nós, pecadores, agora e na hora de nossa morte. Amém.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card-body">
+            <h5 class="card-title fw-bolder">Ave Maria</h5>
+            <p class="card-text"> 
+              Ave, María, grátia plena: Dóminus tecum: benedícta tu in muliéribus, et benedictus fructus ventris tui Jesus. Sancta María, Mater Dei, ora pro nobis peccatóribus, nunc et in hora mortis nostrae. Amen.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="gloria" class="card lg-3" style="max-width: 1000px;">
+      <div class="row g-0">
+        <div class="col-lg-6 p-xxl-3" style="width: 100%;">
+          <img src="img/Santíssima-Trindade-site-scaled.jpg" class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-6">
+          <div class="card-body">
+            <h5 class="card-title fw-bolder">Glória</h5>
+            <p class="card-text">Glória ao Pai, ao Filho e ao Espírito Santo.
+
+              Como era no princípio, agora e sempre. Amém.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card-body">
+            <h5 class="card-title fw-bolder">Gloria</h5>
+            <p class="card-text"> 
+              Glória Patri et Fílio et Spirítui Sancto.
+
+Sicut erat in princípio et nunc et semper et in saecula saeculórum. Amen</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="domine-iesu" class="card lg-3" style="max-width: 1000px;">
+      <div class="row g-0">
+        <div class="col-lg-6 p-xxl-3" style="width: 100%;">
+          <img src="img/Nossa-Senhora-de-Fátima.jpg" class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-6">
+          <div class="card-body">
+            <h5 class="card-title fw-bolder">Oração de Fátima</h5>
+            <p class="card-text">Senhor Jesus, perdoai-nos,
+              livrai-nos do fogo do inferno;
+              levai as almas todas para o céu
+              e socorrei principalmente as almas mais necessitadas de Vossa Infinita Misericórdia.
+              Amém.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card-body">
+            <h5 class="card-title fw-bolder">Oratio Fatima</h5>
+            <p class="card-text"> 
+              Domine Iesu, dimitte nobis debita nostra, salva nos ab igne inferiori, perduc in caelum omnes animas, praesertim eas quae misericordiae tuae maxime indigent.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="salve-rainha" class="card lg-3" style="max-width: 1000px;">
+      <div class="row g-0">
+        <div class="col-lg-6 p-xxl-3" style="width: 100%;">
+          <img src="img/Rainha dos Anjos.jpg" class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-6">
+          <div class="card-body">
+            <h5 class="card-title fw-bolder">Salve Rainha</h5>
+            <p class="card-text">Salve, Rainha, Mãe de misericórdia, vida, doçura e esperança nossa, salve! A vós bradamos, os degredados filhos de Eva; a vós suspiramos, gemendo e chorando neste vale de lágrimas. Eia, pois advogada nossa, esses vossos olhos misericordiosos a nós volvei; e depois deste desterro nos mostrai Jesus, bendito fruto do vosso ventre, ó clemente, ó piedosa, ó doce sempre Virgem Maria. 
+
+              Rogai por nós, santa Mãe de Deus, para que sejamos dignos das promessas de Cristo.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card-body">
+            <h5 class="card-title fw-bolder">Salve Regina</h5>
+            <p class="card-text"> 
+              Salve, Regina, Mater misericordiae, vita, dulcédo et spes nostra, salve. Ad te clamamus, éxsules fiIii Evae. Ad te suspirámus geméntes et flentes in hac lacrimárum valle. Eia ergo, advocáta nostra, illos tuos misericórdes óculos ad nos convérte. Et Jesum benedíctum fructum Ventris tui, nobis, post hoc exsílium, osténde. O clemens, o pia, o dulcis Virgo María! 
+
+Ora pro nobis, sancta Dei Génitrix. Ut digni efficiámur promissiónibus Christi. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="ladainha" class="card lg-3" style="max-width: 1000px;">
+      <div class="row g-0">
+        <div class="col-lg-6 p-xxl-3" style="width: 100%;">
+          <img src="img/a-imitacao-da-virgem-maria.jpg" class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-6">
+          <div class="card-body">
+            <h5 class="card-title fw-bolder">Ladainha de Nossa Senhora</h5>
+            <p class="card-text">
+              Senhor, tende piedade de nós. (2x)<br>
+              Jesus Cristo, tende piedade de nós. (2x)<br>
+              Senhor, tende piedade de nós. (2x)<br><br>
+              Jesus Cristo, ouvi-nos. (2x)<br>
+              Jesus Cristo, atendei-nos. (2x)<br><br>
+              Deus, Pai dos céus, <b>tende piedade de nós.</b><br>
+              Deus Filho, Redentor do mundo,<br>
+              Deus Espírito Santo,<br>
+              Santíssima Trindade, que sois um só Deus,<br><br>
+              Santa Maria, <b>rogai por nós.</b><br>
+              Santa Mãe de Deus,<br>
+              Santa Virgem das virgens,<br><br>
+              Mãe de Jesus Cristo,<br>
+              Mãe da Divina graça,<br>
+              Mãe Puríssima,<br>
+              Mãe Castíssima,<br>
+              Mãe Imaculada,<br>
+              Mãe Intacta,<br>
+              Mãe amável,<br>
+              Mãe, admirável,<br>
+              Mãe do bom conselho,<br>
+              Mãe do Criador,<br>
+              Mãe do Salvador,<br><br>
+              Virgem prudentíssima,<br>
+              Virgem venerável,<br>
+              Virgem louvável,<br>
+              Virgem poderosa,<br>
+              Virgem benigna,<br>
+              Virgem fiel,<br><br>
+              Espelho de justiça,<br>
+              Sede da sabedoria,<br>
+              Causa de nossa alegria,<br>
+              Vaso espiritual,<br>
+              Vaso honorífico,<br>
+              Vaso insigne de devoção,<br>
+              Rosa mística,<br>
+              Torre de Davi,<br>
+              Torre de marfim,<br>
+              Casa de ouro,<br>
+              Arca da aliança,<br>
+              Porta do céu,<br>
+              Estrela da manhã,<br>
+              Saúde dos enfermos,<br>
+              Refúgio dos pecadores,<br>
+              Consoladora dos aflitos,<br>
+              Auxílio dos cristãos,<br><br>
+              Rainha dos anjos,<br>
+              Rainha dos patriarcas, rogai por nós.<br>
+              Rainha dos profetas,<br>
+              Rainha dos apóstolos,<br>
+              Rainha dos mártires,<br>
+              Rainha dos confessores,<br>
+              Rainha das virgens,<br>
+              Rainha de todos os santos,<br>
+              Rainha concebida sem pecado original,<br>
+              Rainha assunta ao céu,<br>
+              Rainha do Santo Rosário,<br>
+              Rainha da paz,<br><br>
+              
+              Cordeiro de Deus, que tirais o pecado do mundo,<br> R: perdoai-nos, Senhor.<br>
+              Cordeiro de Deus que tirais o pecado do mundo,<br> R: ouvi-nos, Senhor.<br>
+              Cordeiro de Deus, que tirais o pecado do mundo,<br> R: tende piedade de nós.<br><br>
+              
+              Rogai por nós, Santa Mãe de Deus.<br>
+              R: Para que sejamos dignos das promessas de Cristo.<br><br>
+              
+              Oremos:<br>
+              Senhor Deus, nós vos suplicamos que concedais a vossos servos lograr perpétua saúde de alma e corpo; e que pela gloriosa intercessão da bem-aventurada sempre Virgem Maria sejamos livres da presente tristeza e gozemos da eterna alegria.<br>Por Cristo Nosso Senhor.<br>Amém.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card-body">
+            <h5 class="card-title fw-bolder">Litaniae Beatae Mariae Virginis</h5>
+            <p class="card-text"> 
+              Kýrie, eléison. (2x)<br>
+              Christe, eléison. (2x)<br>
+              Kýrie, eléison. (2x)<br><br>
+              Christe, audi nos. (2x)<br>
+              Christe, exaudi nos. (2x)<br><br>
+              Pater de cælis, Deus,
+              <b>miserére nobis.</b><br>
+              Fili, Redémptor mundi, Deus,<br>
+              Spíritus Sancte, Deus,<br>
+              Sancta Trínitas, unus Deus,<br><br>
+              Sancta Maria, <b>ora pro nobis.</b><br>
+              Sancta Dei Génitrix,<br>
+              Sancta Virgo vírginum,<br><br>
+          
+          Mater Christi,<br>
+          Mater divínæ grátiæ,<br>
+          Mater puríssima,<br>
+          Mater castíssima,<br>
+          Mater invioláta,<br>
+          Mater intemerata,<br>
+          Mater amábilis,<br>
+          Mater admirábilis,<br>
+          Mater boni consílii,<br>
+          Mater Creatóris,<br>
+          Mater Salvatóris,<br><br>
+          
+          Virgo prudentíssima,<br>
+          Virgo veneránda,<br>
+          Virgo prædicánda,<br>
+          Virgo potens,<br>
+          Virgo clemens,<br>
+          Virgo fidélis,<br><br>
+          
+          Spéculum iustítiæ,<br>
+          Sedes sapiéntiæ,<br>
+          Causa nostræ lætítiæ,<br>
+          Vas spirituále,<br>
+          Vas honorábile,<br>
+          Vas insígne devotiónis,<br>
+          Rosa mystica,<br>
+          Turris davídica,<br>
+          Turris ebúrnea,<br>
+          Domus áurea,<br>
+          Féderis arca,<br>
+          Iánua cæli,<br>
+          Stella matutina,<br>
+          Salus infirmórum,<br>
+          Refúgium peccatórum,<br>
+          Consolátrix afflictórum,<br>
+          Auxílium christianórum,<br><br>
+          
+          Regína angelórum,<br>
+          Regína patriarchárum,<br>
+          Regína prophetárum,<br>
+          Regína apostolórum,<br>
+          Regína mártyrum,<br>
+          Regína confessórum,<br>
+          Regína vírginum,<br>
+          Regínia sanctórum ómnium,<br>
+          Regína sine labe origináli concepta,<br>
+          Regína in cælum assumpta,<br>
+          Regína sacratíssimi rosárii,<br>
+          Regína pacis,<br><br>
+          
+              Agnus Dei, qui tollis peccáta mundi,<br>
+              R. parce nobis, Dómine.<br>
+              Agnus Dei, qui tollis peccáta mundi,<br>
+              R. exáudi nos, Dómine.<br>
+              Agnus Dei, qui tollis peccáta mundi,<br>
+              R. miserére nobis.<br><br>
+              Ora pro nobis, sancta Dei Génitrix,<br>
+              R. ut digni efficiámur promissiónibus Christi.<br><br>
+
+              Orémus:<br>
+
+Concéde nos fámulos tuos, quæsumus, Dómine Deus, perpétua mentis et córporis sanitáte gaudére: et gloriósa beátæ Maríæ semper Vírginis intercessióne, a præsénti liberári tristítia, et ætérna pérfrui lætítia.<br>
+
+Per Christum Dóminum nostrum.<br>
+
+Amen
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="anima-christi" class="card lg-3" style="max-width: 1000px;">
+      <div class="row g-0">
+        <div class="col-lg-6 p-xxl-3" style="width: 100%;">
+          <img src="https://www.catolicismoromano.com.br/wp-content/uploads/2010/01/Cristo5.jpg" class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-6">
+          <div class="card-body">
+            <h5 class="card-title fw-bolder">Alma de Cristo</h5>
+            <p class="card-text">Alma de Cristo, santifica-me.
+              Corpo de Cristo, salva-me.
+              Sangue de Cristo, extasia-me.
+              Água que vem de Cristo, lava-me.
+              Paixão de Cristo, conforta-me.
+              Ó bom Jesus, escuta-me.
+              Entre tuas feridas, esconde-me.
+              Não permitas que me separe de ti.
+              E dos exércitos do maligno, defende-me.
+              E na hora da Morte, chama-me.
+              E deixa-me ir a ti.
+              e com teus santos, te louvar.
+              Pelos séculos dos séculos.
+              
+              Amém.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card-body">
+            <h5 class="card-title fw-bolder">Anima Christi</h5>
+            <p class="card-text"> 
+              Anima Christi, sanctifica me.
+              Corpus Christi, salve me.
+              Sanguis Christi, inebria me.
+              Aqua lateris Christi, lava me.
+              Passio Christi, conforta me.
+              O bone Iesu, exaudi me.
+              Intra tua vulnera absconde me.
+              Ne permittas me separari a te.
+              Ab hoste maligno defende me.
+              In hora mortis meae voca me.
+              Et iube me venire ad te,
+              ut cum Sanctis tuis laudem te
+              in saecula saeculorum.
+
+              Amen.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="angelus" class="card lg-3" style="max-width: 1000px;">
+      <div class="row g-0">
+        <div class="col-lg-6 p-xxl-3" style="width: 100%;">
+          <img src="https://64.media.tumblr.com/c0d75977ac344a6c56a759e517cd5593/tumblr_o0dqkpuYs71tc8vrmo1_1280.jpg" class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-6">
+          <div class="card-body">
+            <h5 class="card-title fw-bolder">O Anjo do Senhor</h5>
+            <p class="card-text">V/. O Anjo do Senhor anunciou a Maria.<br>
+              R/. e ela concebeu do Espírito Santo. <a href="oracoes-basicas.html#ave-maria">Ave Maria…</a><br>V/. Eis aqui a serva do Senhor.<br>
+              R/. Faça-se em mim segundo a vossa palavra. <a href="oracoes-basicas.html#ave-maria">Ave Maria…</a><br>V/.e o Verbo se fez carne.<br>
+              R/. E habitou entre nós. <a href="oracoes-basicas.html#ave-maria">Ave Maria…</a><br><br>  V/.Rogai por nós, Santa Mãe de Deus.<br>
+              R/. Para que sejamos dignos das promessas de Cristo.<br><br>Oremos:<br>
+              Derramai, ó Deus, a vossa graça em nossos corações, para que, conhecendo, pela mensagem do Anjo, a encarnação do Cristo, vosso Filho,
+              cheguemos, por sua paixão e cruz, à glória da ressurreição pela intercessão da Virgem Maria.Pelo mesmo Cristo, Senhor Nosso.Amém.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card-body">
+            <h5 class="card-title fw-bolder">Angelus</h5>
+            <p class="card-text"> 
+              V/. Ángelus Dómini nuntiávit Maríae.<br>
+              R/. Et concépit de Spíritu Sancto. <a href="oracoes-basicas.html#ave-maria">Ave Maria…</a><br>V/. Ecce ancílla dómini.<br>
+              R/. Fiat mihi secúndum verbum tuum. <a href="oracoes-basicas.html#ave-maria">Ave Maria…</a><br>V/. Et Verbum caro factum est.<br>
+              R/. Et habitávit in nobis. <a href="oracoes-basicas.html#ave-maria">Ave Maria…</a><br><br>V/. Ora pro nobis, sancta Dei Génetrix.<br>
+              R/. Ut digni efficiámur prommissiónibus Christi.<br><br> Orémus.<br>
+              Grátiam tuam, quaésumus, Dómine, méntibus nostri infúnde; ut qui, ángelo nuntiánte, Christi Fílii tui encarnatiónem cognóvimus,
+              per passiónem eius et crucem, ad resurrectiónis glóriam perducámur. Per eúmdem Christum dóminum nostrum. Amen.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="regina-caeli" class="card lg-3" style="max-width: 1000px;">
+      <div class="row g-0">
+        <div class="col-lg-6 p-xxl-3" style="width: 100%;">
+          <img src="img/Coroação Gloriosa de Maria.jpg" class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-6">
+          <div class="card-body">
+            <h5 class="card-title fw-bolder">Rainha do Céu</h5>
+            <p class="card-text">V/. Rainha do Céu, alegrai-Vos, aleluia.<br>
+
+              R/. Porque quem merecestes trazer em vosso seio, aleluia.<br>
+              
+              V/. Ressuscitou como disse, aleluia.<br>
+              
+              R/. Rogai a Deus por nós, aleluia.<br>
+              
+              V/. Exultai e alegrai-vos, ó Virgem Maria, aleluia.<br>
+              
+              R/. Porque o Senhor ressuscitou verdadeiramente, aleluia.<br><br>
+              
+              Oremos.<br>
+              
+              Ó Deus, que Vos dignastes alegrar o mundo com a Ressurreição do Vosso Filho Jesus Cristo, Senhor Nosso, concedei- -nos, Vos suplicamos, que por sua Mãe, 
+              a Virgem Maria, alcancemos as alegrias da vida eterna. Por Cristo, Senhor Nosso. Amém.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card-body">
+            <h5 class="card-title fw-bolder">Regina Cæli</h5>
+            <p class="card-text">V/ Regína Cæli, lætáre, alleluia;<br>
+
+              R/ Quia quem meruísti portáre, alleluia;<br>
+              
+              V/ Resurréxit, sicut dixit, alleluia;<br>
+              
+              R/ Ora pro nóbis Deum, alleluia.<br>
+              
+              V/ Gaude et lætáre, Virgo Maria, alleluia.<br>
+              
+              R/ Quia surréxit Dóminus vere, alleluia.<br><br>
+              
+              Oremus.<br> Deus, qui per resurrectiónem Filii tui Dómini nostri Jesu Christi mundum lætificáre dignátus es: præsta, quæsumus; ut, per eius Genitrícem Vírginem Mariam,
+              perpétuæ capiámus gáudia vitæ. Per eumdem Christum, Dóminum nostrum. Amém.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>   
+</body>
+
+  <footer>
+    <div class="modal-footer p-xxl-3 text-center text-black">
+      <p>Feito por Damião - São Miguel Arcanjo, rogai por nós</p>
+    </div>
+  </footer>
+</html>

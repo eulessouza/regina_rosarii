@@ -4496,9 +4496,15 @@ textarea.form-control-lg {
   margin-top: 30px;
 }
 
+
+.margin-pub{
+  margin-top: 2rem;
+  margin-left: 4rem
+}
+
 .margin-card{
-  margin-top: 30px;
-  margin-left: 30px;
+  margin-top: 2rem;
+  margin-left: 2rem;
 }
 
 .bg-none{
@@ -5584,11 +5590,12 @@ textarea.form-control-lg {
 }
 
 .modal-footer {
+  background-color: white;
   display: flex;
   flex-wrap: wrap;
   flex-shrink: 0;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
   padding: 0.75rem;
   border-top: 1px solid #dee2e6;
   border-bottom-right-radius: calc(0.3rem - 1px);
@@ -5781,6 +5788,12 @@ textarea.form-control-lg {
   word-wrap: break-word;
   opacity: 0;
 }
+
+.text-shadow{
+  text-shadow:
+     1px 1px 0 #000;
+}
+
 .tooltip.show {
   opacity: 0.9;
 }
