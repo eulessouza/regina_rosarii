@@ -16,43 +16,56 @@
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">
-            <img src="img/icone.png" alt="" width="30" height="24">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="proposito.html">Propósito</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="https://discord.gg/4kk9m58W4n">Discord</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Orações
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="rosario.html">Rosário</a></li>
-                  <li><a class="dropdown-item" href="oracoes-basicas.html">Orações clássicas</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="oracoes-santos.html">Orações a santos</a></li>
-                  <li><a class="dropdown-item" href="coroa-de-sao-miguel.html">Coroa de São Miguel Arcanjo</a></li>
-                </ul>
-              </li>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light mb-4">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="img/icone.png" alt="" width="30" height="24">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="proposito.html">Propósito</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://discord.gg/4kk9m58W4n">Discord</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="rosario.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Rosário
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="rosario.html#oracao-inicial">Início</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="rosario.html#m-gozosos">Mistérios Gozosos</a></li>
+              <li><a class="dropdown-item" href="rosario.html#m-dolorosos">Mistérios Dolorosos</a></li>
+              <li><a class="dropdown-item" href="rosario.html#m-gloriosos">Mistérios Gloriosos</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="rosario.html#salve-regina">Agradecimento</a></li>
             </ul>
-          </div>
-        </div>
-      </nav>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Orações
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="oracoes-basicas.html">Orações clássicas</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="oracoes-santos.html">Orações a santos</a></li>
+              <li><a class="dropdown-item" href="coroa-de-sao-miguel.html">Coroa de São Miguel Arcanjo</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
     <div class="img-bg mb-4 container-fluid fw-bolder text-shadow modal-title text-center text-white py-xxl-5">
         <h1>O Santo Rosário pelo método de<br>São Luís Maria Grignion de Montfort</h1>
     </div>
-    <div class="container">
+    <div id="oracao-inicial" class="container">
         <div class="card mb-4" style="max-width: 1400px;">
             <div class="row g-0">
                 <div class="card-body">
@@ -264,7 +277,7 @@
           <div class="card lg-3 mb-4 encarnacao" style="max-width: 1400px;">
             <div class="row g-0">
                 <div class="col-md-4">
-                    <img src="img/crucificação.gif" class="img-fluid rounded-start" alt="...">
+                    <img src="img/crucificação.gif" class="crop7 rounded-start" alt="...">
                 </div>
                 <div class="col-md-8">
                     <div class="card-body">
@@ -287,7 +300,7 @@
         <div class="card lg-3 mb-4" style="max-width: 1400px;">
             <div class="row g-0">
                 <div class="col-md-4">
-                    <img src="https://i.pinimg.com/736x/ca/75/6c/ca756cf92a1aceb4e1f1d8e778c7357c.jpg" class="img-fluid rounded-start" alt="...">
+                    <img src="https://i.pinimg.com/736x/ca/75/6c/ca756cf92a1aceb4e1f1d8e778c7357c.jpg" class="crop7 rounded-start" alt="...">
                 </div>
                 <div class="col-md-8">
                     <div class="card-body">
@@ -304,7 +317,7 @@
           <div class="card lg-3 mb-4" style="max-width: 1400px;">
             <div class="row g-0">
                 <div class="col-md-4">
-                    <img src="https://soutodoteumaria.com.br/wp-content/uploads/2022/05/Ascensao-do-Senhor1.jpg" class="img-fluid rounded-start" " alt="...">
+                    <img src="https://soutodoteumaria.com.br/wp-content/uploads/2022/05/Ascensao-do-Senhor1.jpg" class="crop7 rounded-start" " alt="...">
                 </div>
                 <div class="col-md-8">
                     <div class="card-body">
@@ -355,7 +368,7 @@
           <div class="card lg-3 mb-4 encarnacao" style="max-width: 1400px;">
             <div class="row g-0">
                 <div class="col-md-4">
-                    <img src="https://pbs.twimg.com/media/EXOG_dtX0AAb7Vf?format=jpg&name=medium" class="img-fluid rounded-start" alt="...">
+                    <img src="https://pbs.twimg.com/media/EXOG_dtX0AAb7Vf?format=jpg&name=medium" class="crop8 rounded-start" alt="...">
                 </div>
                 <div class="col-md-8">
                     <div class="card-body">

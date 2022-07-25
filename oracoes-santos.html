@@ -21,38 +21,51 @@
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light mb-4">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">
-            <img src="img/icone.png" alt="" width="30" height="24">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="proposito.html">Propósito</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="https://discord.gg/4kk9m58W4n">Discord</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Orações
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="rosario.html">Rosário</a></li>
-                  <li><a class="dropdown-item" href="oracoes-basicas.html">Orações clássicas</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="oracoes-santos.html">Orações a santos</a></li>
-                  <li><a class="dropdown-item" href="coroa-de-sao-miguel.html">Coroa de São Miguel Arcanjo</a></li>
-                </ul>
-              </li>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light mb-4">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="img/icone.png" alt="" width="30" height="24">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="proposito.html">Propósito</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://discord.gg/4kk9m58W4n">Discord</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="rosario.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Rosário
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="rosario.html#oracao-inicial">Início</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="rosario.html#m-gozosos">Mistérios Gozosos</a></li>
+              <li><a class="dropdown-item" href="rosario.html#m-dolorosos">Mistérios Dolorosos</a></li>
+              <li><a class="dropdown-item" href="rosario.html#m-gloriosos">Mistérios Gloriosos</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="rosario.html#salve-regina">Agradecimento</a></li>
             </ul>
-          </div>
-        </div>
-      </nav>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Orações
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="oracoes-basicas.html">Orações clássicas</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="oracoes-santos.html">Orações a santos</a></li>
+              <li><a class="dropdown-item" href="coroa-de-sao-miguel.html">Coroa de São Miguel Arcanjo</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
       <div id="" class="container" style="max-width: 1400px">
         <div class="container-fluid mb-4 oracoes-classicas-bg">
@@ -94,12 +107,13 @@
           </form>
         </div>
 
+        <div class="container mb-4">
         <div id="s-miguel" class="card lg-3" style="max-width: 1400px;">
           <div class="row g-0">
-            <div class="col-lg-6 p-xxl-3" style="width: 100%;">
-              <img src="https://www.miliciadaimaculada.org.br/source/files/c/14471/sao_miguel-720482_1028-558-0-0.jpg" class="img-fluid rounded-start" style="max-height: 200px;" alt="...">
+            <div class="col-lg-4 p-xxl-3"">
+              <img src="https://www.miliciadaimaculada.org.br/source/files/c/14471/sao_miguel-720482_1028-558-0-0.jpg" class="img-fluid rounded-start" " alt="...">
             </div>
-            <div class="col-md-6">
+            <div class="col-md-4">
               <div class="card-body">
                 <h5 class="card-title fw-bolder">São Miguel Arcanjo</h5>
                 <p class="card-text">São Miguel Arcanjo, defendei-nos no combate, sede nosso refúgio contra a maldade e as ciladas do demônio! Ordene-lhe Deus, 
@@ -110,7 +124,7 @@
                 </p>
               </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-4">
               <div class="card-body">
                 <h5 class="card-title fw-bolder">Sancte Michael Archangele</h5>
                 <p class="card-text"> 
@@ -126,26 +140,30 @@
 
         <div id="s-gabriel" class="card lg-3" style="max-width: 1400px;">
           <div class="row g-0">
-            <div class="col-lg-6 p-xxl-3" style="width: 100%;">
-              <img src="https://www.nossasagradafamilia.com.br/imagens/uploads/conteudos/crop_2017080216062126zKUQHq3.jpg" class="img-fluid rounded-start" style="max-height: 200px;" alt="...">
+            <div class="col-lg-4 p-xxl-3"">
+              <img src="https://www.nossasagradafamilia.com.br/imagens/uploads/conteudos/crop_2017080216062126zKUQHq3.jpg" class="img-fluid rounded-start" " alt="...">
             </div>
-            <div class="col-md-6">
+            <div class="col-md-4">
               <div class="card-body">
-                <h5 class="card-title fw-bolder">São Gabriel Arcanjo</h5>
-                <p class="card-text">São Gabriel Arcanjo,
-                  vós, Anjo da Encarnação, mensageiro fiel de DEUS, abri os nossos ouvidos também às suaves exortações e chamadas do Coração amoroso de Nosso senhor.
-                  Nós vos suplicamos que fiqueis sempre diante de nosso olhar para compreendermos bem a palavra de DEUS, a seguirmos e lhe obedecermos e, assim, 
-                  realizarmos aquilo que DEUS quer de nós. Ajudai-nos a estar sempre disponíveis e vigilantes, de modo a que o Senhor, quando vier, não nos encontre dormindo!
-                <br><br>São Gabriel, assisti-nos com os vossos Anjos,
-                ajudai-nos e rogai por nós!
+                <h5 class="card-title fw-bolder">Comemoração de São Gabriel Arcanjo</h5>
+                <p class="card-text">Ó glorioso Príncipe, Gabriel Arcanjo, lembrai de nós, aqui e em toda parte: rogai sempre ao Filho de Deus por nós, Aleluia, Aleluia.<br><br>
+                  V. Um anjo estava perto do altar do templo.<br>
+                  R. Segurando um incensário de ouro na mão.<br><br>
+
+                  Ó Deus, que entre todos os Anjos escolheste o Arcanjo Gabriel para anunciar o mistério da Tua Encarnação; conceda misericordiosamente que nós, 
+                  que solenemente celebramos sua festa na terra, possamos sentir o benefício de seu patrocínio no céu: quem vive e reina para todo o sempre. Amém.
                 </p>
               </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-4">
               <div class="card-body">
-                <h5 class="card-title fw-bolder fst-italic">*Sem latim*</h5>
+                <h5 class="card-title fw-bolder">Commemoratio Sancti Gabrielis Archangeli</h5>
                 <p class="card-text"> 
-                  Contribua com o site enviado a tradução desta oração em reginasrosarii@gmail.com
+                  Princeps gloriosissime, Gabriel Archangele, esto memor nostri: hic et ubique semper precare pro nobis Filium Dei, alleluia, alleluia.<br><br>
+                  V. Stetit Angelus iuxta aram templi.<br>
+                  R. Habens turibulum aureum in manu sua.<br><br>
+                  DEUS, qui inter ceteros Angelos, ad annuntiandum incarnationis tuae mysterium, Gabrielem Archangelum elegisti; concede propitius, 
+                  ut qui festum eius celebramus in terris, ipsius patrocinium sentiamus in caelis: qui vivis et regnas in saecula saeculorum. Amen.
                 </p>
               </div>
             </div>
@@ -154,28 +172,20 @@
         
         <div id="s-rafael" class="card lg-3" style="max-width: 1400px;">
           <div class="row g-0">
-            <div class="col-lg-6 p-xxl-3" style="width: 100%;">
-              <img src="https://s.calendarr.com/upload/datas/sa/or/sao-rafael_c.jpg?auto_optimize=high&width=640" class="img-fluid rounded-start" style="max-height: 200px;" alt="...">
+            <div class="col-lg-4 p-xxl-3"">
+              <img src="https://s.calendarr.com/upload/datas/sa/or/sao-rafael_c.jpg?auto_optimize=high&width=640" class="crop2 rounded-start" " alt="...">
             </div>
-            <div class="col-md-6">
+            <div class="col-md-4">
               <div class="card-body">
                 <h5 class="card-title fw-bolder">São Rafael Arcanjo</h5>
-                <p class="card-text"><p class="fw-bolder">Oração para todos os dias:</p> “Oh Glorioso Arcanjo São Rafael, que estais presente ante o trono do Altíssimo: eu, vosso indigno devoto,
-                  me humilho em vossa presença. Conhecendo por uma parte minha indignidade, e por outra vossa ardente caridade, vos suplico do íntimo do coração que vos digneis
-                  escutar os meus humildes rogos, e que os apresenteis ante o Senhor para obter, por vossa mediação, os favores que solicito nesta novena. Mas se minha súplica
-                  não há de contribuir para maior glória de Deus e salvação da minha alma, rogo-vos, oh meu Celestial protetor: mostrai a graça que me há de conduzir com mais
-                  segurança à eterna salvação. Não olheis tanto para os meus desejos, quanto ao bem de minha alma. Cheio de inteira confiança em Vós, espero alcançar o que
-                  solicito pelos méritos de Nosso Senhor Jesus Cristo, que vive e reina com o Pai e o Espírito Santo pelos séculos dos séculos. Amém. (pedir as graças)”<br><br>
-                  <p class="fw-bolder">Invocação da oração do arcanjo Rafael:</p> “Oh Glorioso Arcanjo São Rafael, lembrai-vos de vossos devotos em todas as partes, e pedi sempre por nós ao
-                  Filho de Deus.” Reze nove vezes Glória ao Pai, em honra dos nove coros angélicos.
-                </p>
+                <p class="card-text">Dignai-nos, Senhor Deus, enviar em nosso auxílio São Rafael, o Arcanjo: e que aquele que, cremos, está sempre diante do trono de Tua majestade, ofereça a Ti nossas humildes petições para ser abençoado por Ti. Por Cristo nosso Senhor. Amém.</p>
               </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-4">
               <div class="card-body">
-                <h5 class="card-title fw-bolder fst-italic">*Sem latim*</h5>
+                <h5 class="card-title fw-bolder">Ad Sanctum Raphaelem Archangelum</h5>
                 <p class="card-text"> 
-                  Contribua com o site enviado a tradução desta oração em reginasrosarii@gmail.com
+                  Dirigere dignare, Domine Deus, in adiutorium nostrum, sanctum Raphaelem Archangelum; et quem tuae maiestati semper assistere credimus, tibi nostras exiguas preces benedicendas assignet. Per Christum Dominum nostrum. Amen.
                 </p>
               </div>
             </div>
@@ -184,25 +194,37 @@
 
         <div id="s-jose" class="card lg-3" style="max-width: 1400px;">
           <div class="row g-0">
-            <div class="col-lg-6 p-xxl-3" style="width: 100%;">
-              <img src="https://www.nossasagradafamilia.com.br/imagens/uploads/conteudos/crop_20170608135438KF6cNCKbhI.jpg" class="img-fluid rounded-start" style="max-height: 200px;" alt="...">
+            <div class="col-lg-4 p-xxl-3"">
+              <img src="https://santhatela.com.br/wp-content/uploads/2018/02/murillo-sao-jose-e-jesus-d.jpg" class="crop1 rounded-start"  alt="...">
             </div>
-            <div class="col-md-6">
+            <div class="col-md-4">
               <div class="card-body">
-                <h5 class="card-title fw-bolder">Oração a São José</h5>
-                <p class="card-text">Ó glorioso São José, a quem foi dado o poder de tornar possíveis as coisas humanamente impossíveis. Vinde em nosso auxílio nas dificuldades
-                  em que nos achamos. Tomai sob a vossa proteção a causa que vos confiamos para que tenha uma solução favorável. Ó Pai muito amado, em vós depositamos toda nossa
-                  confiança.<br><br>
-
-                  Oh, São José, pai adotivo de Jesus, puríssimo esposo da Virgem Maria, rogai por nós diariamente ao mesmo Jesus, o Filho de Deus, que nós, sendo defendidos
-                  pela força de sua graça e lutando fielmente na vida, pode ser coroado por Ele na hora da morte. Amém.</p>
+                <h5 class="card-title fw-bolder">São José</h5>
+                <p class="card-text">Oh, São José, pai adotivo de Jesus, puríssimo esposo da Virgem Maria, rogai por nós diariamente ao mesmo Jesus, o Filho de Deus, que nós, sendo defendidos pela força de sua graça e lutando fielmente na vida, pode ser coroado por Ele na hora da morte. Amém.</p>
               </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-4">
               <div class="card-body">
-                <h5 class="card-title fw-bolder fst-italic">*Sem latim*</h5>
+                <h5 class="card-title fw-bolder">O Ioseph, Virgo Pater Iesu</h5>
                 <p class="card-text"> 
-                  Contribua com o site enviado a tradução desta oração em reginasrosarii@gmail.com
+                  O Ioseph, Virgo Pater Iesu, purissime Sponse Virginis Mariae, quotidie deprecare pro nobis ipsum Iesum Filium Dei, ut, armis suae gratiae muniti legitime certantes in vita, ab eodem coronemur in morte. Amen.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4 p-xxl-3"">
+              <img src="http://blog.cancaonova.com/tododemaria/files/2016/03/O-amor-de-S%C3%A3o-Jos%C3%A9-a-Jesus-a-Maria-e-a-n%C3%B3s.jpg" class="img-fluid rounded-start"  alt="...">
+            </div>
+            <div class="col-md-4">
+              <div class="card-body">
+                <h5 class="card-title fw-bolder">Lembrai de nós, ó bem-aventurado José</h5>
+                <p class="card-text">Lembrai de nós, ó bem-aventurado José, e intercede por nós junto ao teu filho adotivo pela súplica da tua oração; da mesma maneira, fazei a bem-aventurada Virgem Maria, tua Esposa, misericordiosa para conosco, porque ela é a Mãe Dele, que com o Pai e o Espírito Santo vive e reina no mundo sem fim. Amém.</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card-body">
+                <h5 class="card-title fw-bolder">Memento nostri, beate Ioseph</h5>
+                <p class="card-text"> 
+                  Memento nostri, beate Ioseph, et tuae orationis suffragio apud tuum putativum Filium intercede; sed et beatissimam Virginem Sponsam tuam nobis propitiam redde, quae Mater est Eius, qui cum Patre et Spiritu Sancto vivit et regnat per infinita saecula saeculorum. Amen.
                 </p>
               </div>
             </div>
@@ -211,10 +233,10 @@
 
         <div id="s-dsavio" class="card lg-3" style="max-width: 1400px;">
           <div class="row g-0">
-            <div class="col-lg-6 p-xxl-3" style="width: 100%;">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/b/bc/Z_domingo_savio.jpg" class="img-fluid rounded-start" style="max-height: 200px;" alt="...">
+            <div class="col-lg-4 p-xxl-3"">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/b/bc/Z_domingo_savio.jpg" class="crop1 rounded-start"  alt="...">
             </div>
-            <div class="col-md-6">
+            <div class="col-md-4">
               <div class="card-body">
                 <h5 class="card-title fw-bolder">Oração a São Domingos Sávio</h5>
                 <p class="card-text">Suplico-vos glorioso São Domingos Sávio, pela vossa admirável pureza.
@@ -223,7 +245,7 @@
                   Amém.</p>
               </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-4">
               <div class="card-body">
                 <h5 class="card-title fw-bolder fst-italic">*Sem latim*</h5>
                 <p class="card-text"> 
@@ -236,10 +258,10 @@
 
         <div id="s-teresajesus" class="card lg-3" style="max-width: 1400px;">
           <div class="row g-0">
-            <div class="col-lg-6 p-xxl-3" style="width: 100%;">
-              <img src="https://img.cancaonova.com/cnimages/canais/uploads/sites/2/2019/10/Santo-do-dia.png" class="img-fluid rounded-start" style="max-height: 200px;" alt="...">
+            <div class="col-lg-4 p-xxl-3"">
+              <img src="https://img.cancaonova.com/cnimages/canais/uploads/sites/2/2019/10/Santo-do-dia.png" class="crop3 rounded-start"  alt="...">
             </div>
-            <div class="col-md-6">
+            <div class="col-md-4">
               <div class="card-body">
                 <h5 class="card-title fw-bolder">Oração a Santa Tereza de Jesus</h5>
                 <p class="card-text">“Nada te perturbe, nada te amedronte, tudo passa, a paciência tudo alcança.<br>
@@ -254,7 +276,7 @@
                   Santa Tereza de Jesus, Rogai por nós.</p>
               </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-4">
               <div class="card-body">
                 <h5 class="card-title fw-bolder fst-italic">*Sem latim*</h5>
                 <p class="card-text"> 
@@ -267,46 +289,30 @@
 
         <div id="s-fassis" class="card lg-3" style="max-width: 1400px;">
           <div class="row g-0">
-            <div class="col-lg-6 p-xxl-3" style="width: 100%;">
-              <img src="https://www.rbsdirect.com.br/filestore/3/9/3/6/1/2/1_06433d761e940c4/1216393_f1af222d7e68d05.jpg?w=700" class="img-fluid rounded-start" style="max-height: 200px;" alt="...">
+            <div class="col-lg-4 p-xxl-3"">
+              <img src="https://www.rbsdirect.com.br/filestore/3/9/3/6/1/2/1_06433d761e940c4/1216393_f1af222d7e68d05.jpg?w=700" class="img-fluid rounded-start"  alt="...">
             </div>
-            <div class="col-md-6">
+            <div class="col-md-4">
               <div class="card-body">
                 <h5 class="card-title fw-bolder">Oração a São Francisco de Assis</h5>
-                <p class="card-text">Senhor, fazei de mim um instrumento da Vossa paz.<br><br>
-
-                  Onde houver ódio, que eu leve o amor.<br>
-                  Onde houver ofensa, que eu leve o perdão.<br>
-                  Onde houver discórdia, que eu leve a união.<br>
-                  Onde houver dúvidas, que eu leve a fé.<br>
-                  Onde houver erro, que eu leve a verdade.<br>
-                  Onde houver desespero, que eu leve a esperança.<br>
-                  Onde houver tristeza, que eu leve a alegria.<br>
-                  Onde houver trevas, que eu leve a luz.<br><br>
-                  
-                  Ó Mestre, fazei que eu procure mais:<br>
-                  consolar, que ser consolado;<br>
-                  compreender, que ser compreendido;<br>
-                  amar, que ser amado.<br>
-                  Pois é dando que se recebe.<br>
-                  É perdoando que se é perdoado.<br>
-                  E é morrendo que se vive para a vida eterna.<br><br>
-                  
-                  Rezemos<br>
-                  
-                  Glorioso São Francisco, santo da simplicidade, do amor e da alegria, que no céu contemplais as perfeições infinitas de Deus,
-                  lançai sobre nós o vosso olhar cheio de bondade. Socorrei-nos em nossas necessidades espirituais e corporais. Rogai ao nosso
-                  Pai e Criador, que nos conceda as graças que pedimos por vossa intercessão, vós que sempre fostes tão amigo dele. E inflamai
-                  o nosso coração de amor sempre maior a Deus e aos nossos irmãos, principalmente os mais necessitados.<br><br>
-                  
-                  São Francisco de Assis, rogai por nós. Amém.</p>
+                <p class="card-text">Este homem, desprezando o mundo e triunfando sobre as coisas terrenas, acumulou riquezas no céu por palavras e obras.<br><br>
+                  V. Nosso Senhor guiou os justos por caminhos retos.<br>
+                  R. E mostrou-lhe o reino de Deus.<br><br>
+                  Ó Senhor Jesus Cristo, que quando o mundo estava se esfriando, renovaste na carne do bem-aventurado São Francisco as sagradas marcas de tua 
+                  Paixão para inflamar nossos corações com o fogo de teu amor: misericordiosamente concede que, por seus méritos e orações, podemos sempre carregar a 
+                  Cruz e produzir frutos dignos de arrependimento: Quem vive e reina para todo o sempre. Amém.
+                </p>
               </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-4">
               <div class="card-body">
-                <h5 class="card-title fw-bolder fst-italic">*Sem latim*</h5>
+                <h5 class="card-title fw-bolder">Commemoratio Sancti Francisci Assisiensis</h5>
                 <p class="card-text"> 
-                  Contribua com o site enviado a tradução desta oração em reginasrosarii@gmail.com
+                  Hic vir despiciens mundum et terrena triumphans, divitias caelo condidit ore et manu.<br><br>
+                  V. Iustum deduxit Dominus per vias rectas.<br>
+                  R. Et ostendit illi regnum Dei.<br><br>
+                  DOMINE Iesu Christe, qui frigescente mundo, ad inflammandum corda nostra tui amoris igne, in carne beatissimi Francisci Passionis tuae sacra Stigmata
+                   renovasti: concede propitius, ut eius meritis et precibus crucem iugiter feramus et dignos fructus paenitentiae faciamus: qui vivis et regnas in saecula saeculorum. Amen.
                 </p>
               </div>
             </div>
@@ -315,10 +321,10 @@
 
         <div id="s-agostinho" class="card lg-3" style="max-width: 1400px;">
           <div class="row g-0">
-            <div class="col-lg-6 p-xxl-3" style="width: 100%;">
-              <img src="https://thumbs.jusbr.com/imgs.jusbr.com/publications/images/e0f1bd0eaf8630fc32082d9b67699755" class="img-fluid rounded-start" style="max-height: 200px;" alt="...">
+            <div class="col-lg-4 p-xxl-3"">
+              <img src="https://thumbs.jusbr.com/imgs.jusbr.com/publications/images/e0f1bd0eaf8630fc32082d9b67699755" class="img-fluid rounded-start" " alt="...">
             </div>
-            <div class="col-md-6">
+            <div class="col-md-4">
               <div class="card-body">
                 <h5 class="card-title fw-bolder">Oração a Santo Agostinho</h5>
                 <p class="card-text"><p class="fw-bolder">Benção de Santo Agostinho</p>
@@ -338,7 +344,7 @@
                   acreditado em nós e, por isso, rogamos a vós todos os minutos de nossa existência. Amém!"</p>
               </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-4">
               <div class="card-body">
                 <h5 class="card-title fw-bolder fst-italic">*Sem latim*</h5>
                 <p class="card-text"> 
@@ -351,10 +357,10 @@
 
         <div id="n-s-das-gracas" class="card lg-3" style="max-width: 1400px;">
           <div class="row g-0">
-            <div class="col-lg-6 p-xxl-3" style="width: 100%;">
-              <img src="https://cdn.arquidiocesesalvador.org.br/wp-content/uploads/2020/11/Nossa-Senhora-das-Gracas2-1.jpg" class="img-fluid rounded-start" style="max-height: 200px;" alt="...">
+            <div class="col-lg-4 p-xxl-3"">
+              <img src="https://cdn.arquidiocesesalvador.org.br/wp-content/uploads/2020/11/Nossa-Senhora-das-Gracas2-1.jpg" class="img-fluid rounded-start" " alt="...">
             </div>
-            <div class="col-md-6">
+            <div class="col-md-4">
               <div class="card-body">
                 <h5 class="card-title fw-bolder">Oração a Nossa Senhora Das Graças</h5>
                 <p class="card-text"><p class="fw-bolder">Súplica</p>
@@ -372,7 +378,7 @@
                 a obediência, a castidade, a santa pureza de coração, de corpo e espírito, a perseverança na prática do bem, uma santa vida e uma boa morte. Amém.</p>
               </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-4">
               <div class="card-body">
                 <h5 class="card-title fw-bolder fst-italic">*Sem latim*</h5>
                 <p class="card-text"> 
@@ -385,10 +391,10 @@
 
         <div id="s-jbatista" class="card lg-3" style="max-width: 1400px;">
           <div class="row g-0">
-            <div class="col-lg-6 p-xxl-3" style="width: 100%;">
-              <img src="https://www.nossasagradafamilia.com.br/imagens/uploads/conteudos/crop_20170526180147y1YhPXV4f3.jpg" class="img-fluid rounded-start" style="max-height: 200px;" alt="...">
+            <div class="col-lg-4 p-xxl-3"">
+              <img src="https://www.nossasagradafamilia.com.br/imagens/uploads/conteudos/crop_20170526180147y1YhPXV4f3.jpg" class="img-fluid rounded-start" " alt="...">
             </div>
-            <div class="col-md-6">
+            <div class="col-md-4">
               <div class="card-body">
                 <h5 class="card-title fw-bolder">Oração de São João Batista</h5>
                 <p class="card-text">
@@ -406,7 +412,7 @@
                   <small class="text-muted"><a href="oracoes-basicas.html#gloria">Glória</a></small></p>
               </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-4">
               <div class="card-body">
                 <h5 class="card-title fw-bolder fst-italic">*Sem latim*</h5>
                 <p class="card-text"> 
@@ -419,10 +425,10 @@
 
         <div id="crux-sacra" class="card lg-3" style="max-width: 1400px;">
           <div class="row g-0">
-            <div class="col-lg-6 p-xxl-3" style="width: 100%;">
-              <img src="https://franciscanos.org.br/vidacrista/wp-content/uploads/2019/07/1107-sao-bento.jpg" class="img-fluid rounded-start" style="max-height: 200px;" alt="...">
+            <div class="col-lg-4 p-xxl-3"">
+              <img src="https://franciscanos.org.br/vidacrista/wp-content/uploads/2019/07/1107-sao-bento.jpg" class="img-fluid rounded-start" " alt="...">
             </div>
-            <div class="col-md-6">
+            <div class="col-md-4">
               <div class="card-body">
                 <h5 class="card-title fw-bolder">A Cruz Sagrada de São Bento</h5>
                 <p class="card-text">
@@ -434,7 +440,7 @@
                   Bebe tu mesmo o teu veneno.</p>
               </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-4">
               <div class="card-body">
                 <h5 class="card-title fw-bolder">Crux Sancti Patris Benedicti!</h5>
                 <p class="card-text"> 
@@ -452,10 +458,10 @@
 
         <div id="principe-celeste" class="card lg-3" style="max-width: 1400px;">
           <div class="row g-0">
-            <div class="col-lg-6 p-xxl-3" style="width: 100%;">
-              <img src="https://blog.quintadellarte.com.br/wp-content/uploads/2019/09/306480-saiba-mais-sobre-o-dia-de-sao-miguel-arcanjo.jpg" class="img-fluid rounded-start" style="max-height: 200px;" alt="...">
+            <div class="col-lg-4 p-xxl-3"">
+              <img src="https://blog.quintadellarte.com.br/wp-content/uploads/2019/09/306480-saiba-mais-sobre-o-dia-de-sao-miguel-arcanjo.jpg" class="img-fluid rounded-start" " alt="...">
             </div>
-            <div class="col-md-6">
+            <div class="col-md-4">
               <div class="card-body">
                 <h5 class="card-title fw-bolder">Ó príncipe da milícia celeste</h5>
                 <p class="card-text">
@@ -466,7 +472,7 @@
                      para que eu possa ser admitido nas alegrias do paraíso onde eu, com todos os anjos, possa louvar a Deus eternamente. Amém.</p>
               </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-4">
               <div class="card-body">
                 <h5 class="card-title fw-bolder">O Princeps caelestis militiae</h5>
                 <p class="card-text"> 
@@ -481,6 +487,7 @@
           </div>
         </div>
 
+      </div>
       </div>
 
 </body>

@@ -21,38 +21,51 @@
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light mb-4">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">
-            <img src="img/icone.png" alt="" width="30" height="24">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="proposito.html">Propósito</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="https://discord.gg/4kk9m58W4n">Discord</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Orações
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="rosario.html">Rosário</a></li>
-                  <li><a class="dropdown-item" href="oracoes-basicas.html">Orações clássicas</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="oracoes-santos.html">Orações a santos</a></li>
-                  <li><a class="dropdown-item" href="coroa-de-sao-miguel.html">Coroa de São Miguel Arcanjo</a></li>
-                </ul>
-              </li>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light mb-4">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="img/icone.png" alt="" width="30" height="24">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="proposito.html">Propósito</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://discord.gg/4kk9m58W4n">Discord</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="rosario.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Rosário
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="rosario.html#oracao-inicial">Início</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="rosario.html#m-gozosos">Mistérios Gozosos</a></li>
+              <li><a class="dropdown-item" href="rosario.html#m-dolorosos">Mistérios Dolorosos</a></li>
+              <li><a class="dropdown-item" href="rosario.html#m-gloriosos">Mistérios Gloriosos</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="rosario.html#salve-regina">Agradecimento</a></li>
             </ul>
-          </div>
-        </div>
-      </nav>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Orações
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="oracoes-basicas.html">Orações clássicas</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="oracoes-santos.html">Orações a santos</a></li>
+              <li><a class="dropdown-item" href="coroa-de-sao-miguel.html">Coroa de São Miguel Arcanjo</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
    <div class="oracoes-classicas container mb-4">
     <div class="container-fluid mb-4 oracoes-classicas-bg">
@@ -114,16 +127,16 @@
 
     <div id="sinal-da-cruz" class="card lg-3">
       <div class="row g-0">
-        <div class="col-lg-6 p-xxl-3" style="width: 100%;">
+        <div class="col-md-6 p-xxl-3" style="max-width: 1400px;">
           <img src="img/cruz.png" class="img-fluid rounded-start" alt="...">
         </div>
-        <div class="col-md-6">
+        <div class="col-md-3">
           <div class="card-body">
             <h5 class="card-title fw-bolder">Sinal da Cruz</h5>
             <p class="card-text">Pelo sinal da santa cruz, livrai-nos, Deus nosso Senhor, dos nossos inimigos.<br>Em nome do Pai , e do Filho e do Espírito Santo Amém.</p>
           </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-3">
           <div class="card-body">
             <h5 class="card-title fw-bolder">Per Signun Crucis</h5>
             <p class="card-text"> 
@@ -136,10 +149,10 @@
     
     <div id="credo" class="card lg-3">
       <div class="row g-0">
-        <div class="col-lg-6 p-xxl-3" style="width: 100%;">
-          <img src="img/apostolos.jpg" class="img-fluid rounded-start" alt="...">
+        <div class="col-md-6 p-xxl-3">
+          <img src="https://osaopaulo.org.br/wp-content/uploads/2021/04/image-103.jpg" class="img-fluid rounded-start" alt="...">
         </div>
-        <div class="col-md-6">
+        <div class="col-md-3">
           <div class="card-body">
             <h5 class="card-title fw-bolder">Credo</h5>
             <p class="card-text">Creio em Deus Pai todo-poderoso, criador do céu e da terra; 
@@ -149,7 +162,7 @@
                  creio no Espírito Santo, na santa Igreja Católica, na comunhão dos santos, na remissão dos pecados, na ressurreição da carne, na vida eterna. Amém.</p>
           </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-3">
           <div class="card-body">
             <h5 class="card-title fw-bolder">Credo</h5>
             <p class="card-text"> 
@@ -165,10 +178,10 @@
 
     <div id="pai-nosso" class="card lg-3">
       <div class="row g-0">
-        <div class="col-lg-6 p-xxl-3" style="width: 100%;">
+        <div class="col-lg-6 p-xxl-3">
           <img src="img/pai-nosso.jpg" class="img-fluid rounded-start" alt="...">
         </div>
-        <div class="col-md-6">
+        <div class="col-md-3">
           <div class="card-body">
             <h5 class="card-title fw-bolder">Pai nosso</h5>
             <p class="card-text">Pai nosso, que estais nos céus, santificado seja o vosso Nome;<br>
@@ -178,7 +191,7 @@
                   Mas livrai-nos do mal. Amém.</p>
           </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-3">
           <div class="card-body">
             <h5 class="card-title fw-bolder">Pater noster</h5>
             <p class="card-text"> 
@@ -196,10 +209,10 @@ Sed líbera nos a malo. Amen.</p>
   
     <div id="ave-maria" class="card lg-3">
       <div class="row g-0">
-        <div class="col-lg-6 p-xxl-3" style="width: 100%;">
+        <div class="col-lg-6 p-xxl-3">
           <img src="img/Leonardo_da_Vinci_L_Annunciazione.gif" class="img-fluid rounded-start" alt="...">
         </div>
-        <div class="col-md-6">
+        <div class="col-md-3">
           <div class="card-body">
             <h5 class="card-title fw-bolder">Ave Maria</h5>
             <p class="card-text">Ave Maria, cheia de graça, o Senhor é convosco;<br>
@@ -208,7 +221,7 @@ Sed líbera nos a malo. Amen.</p>
                Santa Maria, Mãe de Deus, rogai por nós, pecadores, agora e na hora de nossa morte. Amém.</p>
           </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-3">
           <div class="card-body">
             <h5 class="card-title fw-bolder">Ave Maria</h5>
             <p class="card-text"> 
@@ -220,10 +233,10 @@ Sed líbera nos a malo. Amen.</p>
 
     <div id="gloria" class="card lg-3">
       <div class="row g-0">
-        <div class="col-lg-6 p-xxl-3" style="width: 100%;">
+        <div class="col-lg-6 p-xxl-3">
           <img src="img/Santíssima-Trindade-site-scaled.jpg" class="img-fluid rounded-start" alt="...">
         </div>
-        <div class="col-md-6">
+        <div class="col-md-3">
           <div class="card-body">
             <h5 class="card-title fw-bolder">Glória</h5>
             <p class="card-text">Glória ao Pai, ao Filho e ao Espírito Santo.
@@ -231,7 +244,7 @@ Sed líbera nos a malo. Amen.</p>
               Como era no princípio, agora e sempre. Amém.</p>
           </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-3">
           <div class="card-body">
             <h5 class="card-title fw-bolder">Gloria</h5>
             <p class="card-text"> 
@@ -245,10 +258,10 @@ Sicut erat in princípio et nunc et semper et in saecula saeculórum. Amen</p>
 
     <div id="domine-iesu" class="card lg-3">
       <div class="row g-0">
-        <div class="col-lg-6 p-xxl-3" style="width: 100%;">
-          <img src="img/Nossa-Senhora-de-Fátima.jpg" class="img-fluid rounded-start" alt="...">
+        <div class="col-lg-4 p-xxl-3">
+          <img src="https://img.elo7.com.br/product/zoom/283F76F/tela-para-quadro-50x70-nossa-senhora-fatima-parede.jpg" class="crop4 rounded-start" alt="...">
         </div>
-        <div class="col-md-6">
+        <div class="col-md-4">
           <div class="card-body">
             <h5 class="card-title fw-bolder">Oração de Fátima</h5>
             <p class="card-text">Senhor Jesus, perdoai-nos,
@@ -258,7 +271,7 @@ Sicut erat in princípio et nunc et semper et in saecula saeculórum. Amen</p>
               Amém.</p>
           </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-4">
           <div class="card-body">
             <h5 class="card-title fw-bolder">Oratio Fatima</h5>
             <p class="card-text"> 
@@ -270,10 +283,10 @@ Sicut erat in princípio et nunc et semper et in saecula saeculórum. Amen</p>
 
     <div id="salve-rainha" class="card lg-3">
       <div class="row g-0">
-        <div class="col-lg-6 p-xxl-3" style="width: 100%;">
+        <div class="col-lg-4 p-xxl-3">
           <img src="img/Rainha dos Anjos.jpg" class="img-fluid rounded-start" alt="...">
         </div>
-        <div class="col-md-6">
+        <div class="col-md-4">
           <div class="card-body">
             <h5 class="card-title fw-bolder">Salve Rainha</h5>
             <p class="card-text">Salve, Rainha,<br> Mãe de misericórdia, vida, doçura e esperança nossa, salve!<br>
@@ -286,7 +299,7 @@ Sicut erat in princípio et nunc et semper et in saecula saeculórum. Amen</p>
                  <br>R: para que sejamos dignos das promessas de Cristo.</p>
           </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-4">
           <div class="card-body">
             <h5 class="card-title fw-bolder">Salve Regina</h5>
             <p class="card-text"> 
@@ -306,10 +319,12 @@ Sicut erat in princípio et nunc et semper et in saecula saeculórum. Amen</p>
 
     <div id="ladainha" class="card lg-3">
       <div class="row g-0">
-        <div class="col-lg-6 p-xxl-3" style="width: 100%;">
-          <img src="img/a-imitacao-da-virgem-maria.jpg" class="img-fluid rounded-start" alt="...">
+        <div class="col-lg-4 p-xxl-3"> 
+          <img src="img/a-imitacao-da-virgem-maria.jpg" class="crop5 rounded-start mb-4" alt="...">
+          <img src="https://img.elo7.com.br/product/zoom/35F62BF/quadro-pintura-virgem-maria-e-o-menino-jesus-tela-60x40cm-santa-maria-e-o-menino-jesus.jpg" class="crop3 rounded-start mb-4" alt="...">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/The_Immaculate_Conception%2C_by_Giovanni_Battista_Tiepolo%2C_from_Prado_in_Google_Earth.jpg/1200px-The_Immaculate_Conception%2C_by_Giovanni_Battista_Tiepolo%2C_from_Prado_in_Google_Earth.jpg" class="img-fluid rounded-start mb-4" alt="...">
         </div>
-        <div class="col-md-6">
+        <div class="col-md-4">
           <div class="card-body">
             <h5 class="card-title fw-bolder">Ladainha de Nossa Senhora</h5>
             <p class="card-text">
@@ -383,7 +398,7 @@ Sicut erat in princípio et nunc et semper et in saecula saeculórum. Amen</p>
               Senhor Deus, nós vos suplicamos que concedais a vossos servos lograr perpétua saúde de alma e corpo; e que pela gloriosa intercessão da bem-aventurada sempre Virgem Maria sejamos livres da presente tristeza e gozemos da eterna alegria.<br>Por Cristo Nosso Senhor.<br><b>Amém.</b></p>
           </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-4">
           <div class="card-body">
             <h5 class="card-title fw-bolder">Litaniae Beatae Mariae Virginis</h5>
             <p class="card-text"> 
@@ -475,10 +490,10 @@ Per Christum Dóminum nostrum.<br>
 
     <div id="anima-christi" class="card lg-3">
       <div class="row g-0">
-        <div class="col-lg-6 p-xxl-3" style="width: 100%;">
+        <div class="col-lg-4 p-xxl-3">
           <img src="https://www.catolicismoromano.com.br/wp-content/uploads/2010/01/Cristo5.jpg" class="img-fluid rounded-start" alt="...">
         </div>
-        <div class="col-md-6">
+        <div class="col-md-4">
           <div class="card-body">
             <h5 class="card-title fw-bolder">Alma de Cristo</h5>
             <p class="card-text">Alma de Cristo, santifica-me.<br>
@@ -498,7 +513,7 @@ Per Christum Dóminum nostrum.<br>
               Amém.</p>
           </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-4">
           <div class="card-body">
             <h5 class="card-title fw-bolder">Anima Christi</h5>
             <p class="card-text"> 
@@ -524,22 +539,22 @@ Per Christum Dóminum nostrum.<br>
 
     <div id="angelus" class="card lg-3">
       <div class="row g-0">
-        <div class="col-lg-6 p-xxl-3" style="width: 100%;">
+        <div class="col-lg-4 p-xxl-3">
           <img src="https://64.media.tumblr.com/c0d75977ac344a6c56a759e517cd5593/tumblr_o0dqkpuYs71tc8vrmo1_1280.jpg" class="img-fluid rounded-start" alt="...">
         </div>
-        <div class="col-md-6">
+        <div class="col-md-4">
           <div class="card-body">
             <h5 class="card-title fw-bolder">O Anjo do Senhor</h5>
             <p class="card-text">V/. O Anjo do Senhor anunciou a Maria.<br>
               R/. e ela concebeu do Espírito Santo. <a href="oracoes-basicas.html#ave-maria">Ave Maria…</a><br>V/. Eis aqui a serva do Senhor.<br>
-              R/. Faça-se em mim segundo a vossa palavra. <a href="oracoes-basicas.html#ave-maria">Ave Maria…</a><br>V/.e o Verbo se fez carne.<br>
-              R/. E habitou entre nós. <a href="oracoes-basicas.html#ave-maria">Ave Maria…</a><br><br>  V/.Rogai por nós, Santa Mãe de Deus.<br>
+              R/. Faça-se em mim segundo a vossa palavra. <a href="oracoes-basicas.html#ave-maria">Ave Maria…</a><br>V/. e o Verbo se fez carne.<br>
+              R/. E habitou entre nós. <a href="oracoes-basicas.html#ave-maria">Ave Maria…</a><br><br>  V/. Rogai por nós, Santa Mãe de Deus.<br>
               R/. Para que sejamos dignos das promessas de Cristo.<br><br>Oremos:<br>
               Derramai, ó Deus, a vossa graça em nossos corações, para que, conhecendo, pela mensagem do Anjo, a encarnação do Cristo, vosso Filho,
               cheguemos, por sua paixão e cruz, à glória da ressurreição pela intercessão da Virgem Maria. Pelo mesmo Cristo, Senhor Nosso. Amém.</p>
           </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-4">
           <div class="card-body">
             <h5 class="card-title fw-bolder">Angelus</h5>
             <p class="card-text"> 
@@ -557,10 +572,10 @@ Per Christum Dóminum nostrum.<br>
 
     <div id="regina-caeli" class="card lg-3">
       <div class="row g-0">
-        <div class="col-lg-6 p-xxl-3" style="width: 100%;">
+        <div class="col-lg-4 p-xxl-3">
           <img src="img/Coroação Gloriosa de Maria.jpg" class="img-fluid rounded-start" alt="...">
         </div>
-        <div class="col-md-6">
+        <div class="col-md-4">
           <div class="card-body">
             <h5 class="card-title fw-bolder">Rainha do Céu</h5>
             <p class="card-text">V/. Rainha do Céu, alegrai-Vos, aleluia.<br>
@@ -577,24 +592,24 @@ Per Christum Dóminum nostrum.<br>
               
               Oremos.<br>
               
-              Ó Deus, que Vos dignastes alegrar o mundo com a Ressurreição do Vosso Filho Jesus Cristo, Senhor Nosso, concedei- -nos, Vos suplicamos, que por sua Mãe, 
+              Ó Deus, que Vos dignastes alegrar o mundo com a Ressurreição do Vosso Filho Jesus Cristo, Senhor Nosso, concedei-nos, Vos suplicamos, que por sua Mãe, 
               a Virgem Maria, alcancemos as alegrias da vida eterna. Por Cristo, Senhor Nosso. Amém.</p>
           </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-4">
           <div class="card-body">
             <h5 class="card-title fw-bolder">Regina Cæli</h5>
-            <p class="card-text">V/ Regína Cæli, lætáre, alleluia;<br>
+            <p class="card-text">V/. Regína Cæli, lætáre, alleluia;<br>
 
-              R/ Quia quem meruísti portáre, alleluia;<br>
+              R/. Quia quem meruísti portáre, alleluia;<br>
               
-              V/ Resurréxit, sicut dixit, alleluia;<br>
+              V/. Resurréxit, sicut dixit, alleluia;<br>
               
-              R/ Ora pro nóbis Deum, alleluia.<br>
+              R/. Ora pro nóbis Deum, alleluia.<br>
               
-              V/ Gaude et lætáre, Virgo Maria, alleluia.<br>
+              V/. Gaude et lætáre, Virgo Maria, alleluia.<br>
               
-              R/ Quia surréxit Dóminus vere, alleluia.<br><br>
+              R/. Quia surréxit Dóminus vere, alleluia.<br><br>
               
               Oremus.<br> Deus, qui per resurrectiónem Filii tui Dómini nostri Jesu Christi mundum lætificáre dignátus es: præsta, quæsumus; ut, per eius Genitrícem Vírginem Mariam,
               perpétuæ capiámus gáudia vitæ. Per eumdem Christum, Dóminum nostrum. Amém.</p>
@@ -605,10 +620,10 @@ Per Christum Dóminum nostrum.<br>
 
     <div id="confiteor" class="card lg-3">
       <div class="row g-0">
-        <div class="col-lg-6 p-xxl-3" style="width: 100%;">
-          <img src="https://i0.wp.com/opas.org.br/wp-content/uploads/2018/09/angina-do-peito-1.jpg?fit=750%2C425&ssl=1" class="img-fluid rounded-start" alt="...">
+        <div class="col-md-4 p-xxl-3">
+          <img src="https://otcarmo.org/wp-content/uploads/2019/10/cropped-FT1548963791.jpg" class="crop3 rounded-start" alt="...">
         </div>
-        <div class="col-md-6">
+        <div class="col-lg-4">
           <div class="card-body">
             <h5 class="card-title fw-bolder">Confesso</h5>
             <p class="card-text">Confesso a Deus Todo-poderoso, à bem-aventurada sempre Virgem Maria, ao bem-aventurado Miguel Arcanjo,<br>
@@ -617,7 +632,7 @@ Per Christum Dóminum nostrum.<br>
                  ao bem-aventurado João Batista, aos santos Apóstolos Pedro e Paulo, e a todos os santos, que oreis por mim a Deus, Nosso Senhor. Amém.</p>
           </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-lg-4">
           <div class="card-body">
             <h5 class="card-title fw-bolder">Confiteor</h5>
             <p class="card-text">Confiteor Deo omnipotenti, beatae Mariae semper Virgini, beato Michaeli Archangelo,<br> 
@@ -631,10 +646,10 @@ Per Christum Dóminum nostrum.<br>
 
     <div id="angele-dei" class="card lg-3">
       <div class="row g-0">
-        <div class="col-lg-6 p-xxl-3" style="width: 100%;">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/a/aa/Cortona_Guardian_Angel_01.jpg" class="img-fluid rounded-start" alt="...">
+        <div class="col-md-4 p-xxl-3">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/a/aa/Cortona_Guardian_Angel_01.jpg" class="crop6 rounded-start" alt="...">
         </div>
-        <div class="col-md-6">
+        <div class="col-md-4">
           <div class="card-body">
             <h5 class="card-title fw-bolder">Oração ao Santo Anjo da Guarda</h5>
             <p class="card-text">Santo Anjo do Senhor,<br>
@@ -643,7 +658,7 @@ Per Christum Dóminum nostrum.<br>
                  hoje e sempre me governa, rege, guarda e ilumina.<br> Ámen.</p>
           </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-4">
           <div class="card-body">
             <h5 class="card-title fw-bolder">Angele Dei</h5>
             <p class="card-text">Angele Dei, <br>
@@ -658,10 +673,10 @@ Per Christum Dóminum nostrum.<br>
 
     <div id="veni-spiritus" class="card lg-3">
       <div class="row g-0">
-        <div class="col-lg-6 p-xxl-3" style="width: 100%;">
-          <img src="https://domleon.com.br/wp-content/uploads/2019/08/Mar%C3%A7o-m%C3%AAs-do-Esp%C3%ADrito-Santo-e-Eucaristia-1024x576.jpg" class="img-fluid rounded-start" alt="...">
+        <div class="col-lg-4 p-xxl-3">
+          <img src="https://domleon.com.br/wp-content/uploads/2019/08/Mar%C3%A7o-m%C3%AAs-do-Esp%C3%ADrito-Santo-e-Eucaristia-1024x576.jpg" class="crop3 rounded-start" alt="...">
         </div>
-        <div class="col-md-6">
+        <div class="col-md-4">
           <div class="card-body">
             <h5 class="card-title fw-bolder">Vinde, ó Espírito Santo</h5>
             <p class="card-text">Vinde, ó Espírito Santo, enchei os corações dos vossos fiéis e acendei neles o fogo do vosso amor.<br> <br>
@@ -676,7 +691,7 @@ Per Christum Dóminum nostrum.<br>
             </p>
           </div>
         </div>
-        <div class="col-md-6 mb-4">
+        <div class="col-md-4 mb-4">
           <div class="card-body">
             <h5 class="card-title fw-bolder">Veni, Sancte Spíritus!</h5>
             <p class="card-text">Veni, Sancte Spíritus!, reple tuórum corda fidélium: et tui amóris in eis ignem accénde.<br><br>
