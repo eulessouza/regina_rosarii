@@ -4598,6 +4598,14 @@ textarea.form-control-lg {
   margin-left: -0.5rem;
 }
 /* CROPS */
+.crop-img-card {
+  max-width: 100%;
+  width: 1920px; 
+  height: 200px;
+  object-position: 50% 50%; 
+  object-fit: cover;
+}
+
 .crop1 {
   max-width: 100%;
   width: 400px; 
@@ -4659,6 +4667,14 @@ textarea.form-control-lg {
   width: 27rem; 
   height: 300px;
   object-position: 50% 50%; 
+  object-fit: cover;
+}
+
+.crop9 {
+  max-width: 100%;
+  width: 460px;
+  height: 300px;
+  object-position: 30% 30%; 
   object-fit: cover;
 }
 
@@ -6517,6 +6533,8 @@ textarea.form-control-lg {
 
 .link-primary {
   color: #0d6efd;
+  text-decoration: underline;
+
 }
 .link-primary:hover, .link-primary:focus {
   color: #0a58ca;
