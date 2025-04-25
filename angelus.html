@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+<<<<<<< HEAD
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -159,4 +160,195 @@
     <script src="js/main.js"></script>
     <script src="https://kit.fontawesome.com/869daa3fbc.js" crossorigin="anonymous"></script>
     <script src="bootstrap/js/bootstrap.js"></script>
+=======
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Regina Rosarii</title>
+    <link rel="icon" 
+      type="image/png" 
+      href="img/icone.png" />
+    <script src="js/theme.js"></script>
+    <script src="https://kit.fontawesome.com/869daa3fbc.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="searchOverlay" class="search-overlay"></div>
+
+    <nav class="navbar navbar-expand-lg sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="img/icone.png" alt="Regina Rosarii">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="proposito.html">Propósito</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="rosario.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Rosário
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="rosario.html#oracao-inicial">Início</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="rosario.html#m-gozosos">Mistérios Gozosos</a></li>
+                <li><a class="dropdown-item" href="rosario.html#m-dolorosos">Mistérios Dolorosos</a></li>
+                <li><a class="dropdown-item" href="rosario.html#m-gloriosos">Mistérios Gloriosos</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="rosario.html#salve-regina">Agradecimento</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Orações
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="oracoes-basicas.html">Orações clássicas</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="oracoes-santos.html">Orações a santos</a></li>
+                <li><a class="dropdown-item" href="coroa-de-sao-miguel.html">Coroa de São Miguel Arcanjo</a></li>
+              </ul>
+            </li>
+          </ul>
+          
+          <!-- Novo container de pesquisa alinhado à direita -->
+          <div class="navbar-nav ms-auto">
+            <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema">
+              <i class="fas fa-moon"></i>
+            </button>
+            <div class="search-container">
+              <form class="d-flex search-form" action="resultados.html" method="GET">
+                <input 
+                  type="search" 
+                  id="navSearchInput" 
+                  name="q"
+                  class="form-control" 
+                  placeholder="Buscar..."
+                  aria-label="Buscar"
+                  autocomplete="off">
+                <button class="btn btn-outline-primary" type="submit">
+                  <i class="fas fa-search"></i> <!-- Ícone de lupa do FontAwesome -->
+                </button>
+              </form>
+              <div id="searchSuggestions" class="search-suggestions d-none">
+                <div class="suggestions-content">
+                  <!-- As sugestões serão inseridas aqui via JavaScript -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  
+
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <!-- Card com a explicação -->
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h1 class="card-title h2 mb-4">Oração do Ângelus</h1>
+                        <p class="card-text">
+                            A Oração do Ângelus nos lembra o momento da Anunciação feita pelo anjo Gabriel à Virgem Maria, que livre do pecado original, conceberia o nosso Senhor, Jesus Cristo.
+                        </p>
+                        <p class="card-text">
+                            É feita em três momentos: pela manhã, ao meio dia e à tardinha, sempre com o intuito de reforçar a sensibilidade da nossa comunhão com Deus.
+                        </p>
+                        <p class="card-text">
+                            Pela manhã, a rezamos para oferecer a Deus todos os trabalhos do dia, como forma de gratidão pela sua Encarnação.
+                        </p>
+                        <p class="card-text">
+                            Ao meio dia, pedimos a Deus os meios para louvá-lo e adorá-lo, por intercessão da Virgem Maria, que deu seu sim a Deus.
+                        </p>
+                        <p class="card-text">
+                            E ao fim da tarde, agradecemos pelos favores da Divina Providência durante o dia, pedimos perdão e recomendamos a alma à Santíssima Trindade durante a noite que está por vir, por meio da Virgem Maria.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Nova card para a imagem -->
+                <div class="card mb-4">
+                    <div class="prayer-image-container" style="padding-top: 56.25%;">
+                        <img src="https://4.bp.blogspot.com/-eAR_ZhFcoVE/WV6hRzY_kWI/AAAAAAAADTg/Ih9bQZQgKJceHECH2aOacgw_bUAplJlOgCLcBGAs/s1600/Anuncia%25C3%25A7%25C3%25A3o%2Bdo%2BAnjo%2Ba%2BMaria%2B7.jpg" 
+                             class="prayer-image" 
+                             alt="Anunciação do Anjo">
+                    </div>
+                </div>
+
+                <!-- Card com as orações -->
+                <div class="card mb-4">
+                    <div class="row g-0">
+                        <div class="col-md-6">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bolder">O Anjo do Senhor</h5>
+                                <p class="card-text">
+                                    V/. O Anjo do Senhor anunciou a Maria.<br>
+                                    R/. e ela concebeu do Espírito Santo. <a href="oracoes-basicas.html#ave-maria">Ave Maria…</a><br>V/. Eis aqui a serva do Senhor.<br>
+                                    R/. Faça-se em mim segundo a vossa palavra. <a href="oracoes-basicas.html#ave-maria">Ave Maria…</a><br>V/. e o Verbo se fez carne.<br>
+                                    R/. E habitou entre nós. <a href="oracoes-basicas.html#ave-maria">Ave Maria…</a><br><br>  V/. Rogai por nós, Santa Mãe de Deus.<br>
+                                    R/. Para que sejamos dignos das promessas de Cristo.<br><br>Oremos:<br>
+                                    Derramai, ó Deus, a vossa graça em nossos corações, para que, conhecendo, pela mensagem do Anjo, a encarnação do Cristo, vosso Filho,
+                                    cheguemos, por sua paixão e cruz, à glória da ressurreição pela intercessão da Virgem Maria. Pelo mesmo Cristo, Senhor Nosso. Amém.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bolder">Angelus</h5>
+                                <p class="card-text">
+                                    V/. Ángelus Dómini nuntiávit Maríae.<br>
+                                    R/. Et concépit de Spíritu Sancto. <a href="oracoes-basicas.html#ave-maria">Ave Maria…</a><br>V/. Ecce ancílla dómini.<br>
+                                    R/. Fiat mihi secúndum verbum tuum. <a href="oracoes-basicas.html#ave-maria">Ave Maria…</a><br>V/. Et Verbum caro factum est.<br>
+                                    R/. Et habitávit in nobis. <a href="oracoes-basicas.html#ave-maria">Ave Maria…</a><br><br>V/. Ora pro nobis, sancta Dei Génetrix.<br>
+                                    R/. Ut digni efficiámur prommissiónibus Christi.<br><br> Orémus.<br>
+                                    Grátiam tuam, quaésumus, Dómine, méntibus nostri infúnde; ut qui, ángelo nuntiánte, Christi Fílii tui encarnatiónem cognóvimus,
+                                    per passiónem eius et crucem, ad resurrectiónis glóriam perducámur. Per eúmdem Christum dóminum nostrum. Amen.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="col-lg-4">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Outras Orações</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="rosario.html">Santo Rosário</a></li>
+                            <li><a href="oracoes-basicas.html">Orações Básicas</a></li>
+                            <li><a href="oracoes-santos.html">Orações aos Santos</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  
+      
+    <footer>
+      <div class="modal-footer p-xxl-3 text-center text-black">
+        <p>Feito por Eules - São Miguel Arcanjo, rogai por nós</p>
+      </div>
+    </footer>
+    
+        <!--scripts-->
+        <script src="bootstrap/js/bootstrap.js"></script>
+        <script src="js/main.js"></script>
+    <script src="js/search.js"></script>
+    <script src="https://kit.fontawesome.com/869daa3fbc.js" crossorigin="anonymous"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>  
+        <script src="js/navSearch.js"></script>
+</body>
+>>>>>>> 30c33b5 (version 2.0)
 </html>

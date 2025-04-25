@@ -1,3 +1,40 @@
+<<<<<<< HEAD
+=======
+:root {
+    /* Modo claro (padrão) */
+    --primary-color: #1a4b84;
+    --secondary-color: #f8f9fa;
+    --text-color: #212529;
+    --link-color: #0056b3;
+    --border-color: #dee2e6;
+    --bg-color: #ffffff;
+    --card-bg: #ffffff;
+    --nav-bg: #ffffff;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Modo escuro */
+[data-theme="dark"] {
+    --primary-color: #4785c7;
+    --secondary-color: #2d3238;
+    --text-color: #e9ecef;
+    --link-color: #8bb9e7;
+    --border-color: #495057;
+    --bg-color: #1a1d20;
+    --card-bg: #2d3238;
+    --nav-bg: #212529;
+    --shadow-color: rgba(0, 0, 0, 0.3);
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: var(--text-color);
+    line-height: 1.6;
+    background-color: var(--bg-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+>>>>>>> 30c33b5 (version 2.0)
 #entrada {
     background-position: 10px 12px;
     background-repeat: no-repeat;
@@ -5,6 +42,7 @@
     padding: 12px 20px 12px 40px;
     border: 1px solid #ddd;
     margin-bottom: 12px;
+<<<<<<< HEAD
   }
   
   #filter-list {
@@ -14,11 +52,23 @@
   }
   
   #filter-list li a {
+=======
+}
+
+#filter-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#filter-list li a {
+>>>>>>> 30c33b5 (version 2.0)
     border: 1px solid #ddd;
     margin-top: -1px;
     background-color: #f6f6f6;
     padding: 12px;
     text-decoration: none;
+<<<<<<< HEAD
     
     color: black;
     display: block;
@@ -27,3 +77,997 @@
   #filter-list li a:hover:not(.header) {
     background-color: #eee;
   }
+=======
+    color: black;
+    display: block;
+}
+
+#filter-list li a:hover:not(.header) {
+    background-color: #eee;
+}
+
+.search-container {
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+}
+
+.search-form .form-control {
+    width: 220px;
+    transition: all 0.3s ease;
+    border-radius: 25px;
+    padding-left: 1rem;
+    border: 1px solid var(--border-color);
+}
+
+.search-form .btn {
+    padding: 0.375rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+}
+
+/* Quando a busca estiver ativa */
+.search-container.search-active .btn {
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    margin-left: 8px;
+}
+
+/* Estado ativo - quando focado */
+.search-container.search-active {
+    position: fixed;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 500px;
+    z-index: 1001;
+}
+
+.search-container.search-active .form-control {
+    width: 100%;
+    height: 45px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+}
+
+/* Sugestões */
+.search-suggestions {
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+    width: 100%;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    z-index: 1001;
+}
+
+/* Estado ativo das sugestões */
+.search-container.search-active .search-suggestions {
+    position: fixed;
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 500px;
+}
+
+/* Overlay */
+.search-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(2px);
+    z-index: 1000;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .search-container.search-active {
+        width: 90%;
+    }
+
+    .search-container.search-active .search-suggestions {
+        width: 90%;
+    }
+}
+
+.search-container input {
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+
+.search-container .input-group-text {
+    background: transparent;
+    border-right: none;
+}
+
+.search-container input:focus {
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, .25);
+    border-color: #80bdff;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group-text {
+    background-color: #fff;
+}
+
+#prayer-list {
+    max-height: 300px;
+    overflow-y: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#prayer-list li {
+    transition: background-color 0.3s;
+}
+
+#prayer-list li:hover {
+    background-color: #f8f9fa;
+}
+
+#prayer-list .list-group-item {
+    transition: background-color 0.3s;
+}
+
+#prayer-list .list-group-item:hover {
+    background-color: #f8f9fa;
+}
+
+#prayer-list a {
+    color: #212529;
+    text-decoration: none;
+    display: block;
+    padding: 8px 0;
+}
+
+#prayer-list a:hover {
+    color: #0d6efd;
+}
+
+mark {
+    background-color: #fff3cd;
+    padding: 0.2em;
+    border-radius: 3px;
+}
+
+.search-nav {
+    width: 300px;
+    margin-right: 1rem;
+}
+
+.search-nav .input-group {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.search-nav .form-control {
+    border-right: none;
+    border-radius: 20px 0 0 20px;
+}
+
+.search-nav .input-group-text {
+    background: white;
+    border-left: none;
+    border-radius: 0 20px 20px 0;
+}
+
+.search-results-nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: white;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.search-results-nav .list-group {
+    border-radius: 0 0 8px 8px;
+}
+
+.search-results-nav .list-group-item {
+    border: none;
+    border-bottom: 1px solid #f0f0f0;
+    padding: 0.75rem 1rem;
+}
+
+.search-results-nav .list-group-item:last-child {
+    border-bottom: none;
+}
+
+.search-results-nav a {
+    color: #212529;
+    text-decoration: none;
+    display: block;
+}
+
+.search-results-nav .list-group-item:hover {
+    background-color: #f8f9fa;
+}
+
+.search-container-main {
+    max-width: 800px;
+    margin: 0 auto 2rem;
+}
+
+.search-container-main .input-group {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.search-container-main .form-control {
+    padding: 1rem 1.5rem;
+    font-size: 1.1rem;
+    border: none;
+}
+
+.search-container-main .input-group-text {
+    background: white;
+    border: none;
+    padding: 0 1.5rem;
+}
+
+.card-container .card {
+    transition: transform 0.2s ease;
+    margin-bottom: 1.5rem;
+}
+
+.card-container .card:hover {
+    transform: translateY(-5px);
+}
+
+.card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    transition: transform 0.3s ease;
+    margin-bottom: 2rem;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-title {
+    color: var(--primary-color);
+    font-weight: 700;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.card-text {
+    color: #6c757d;
+}
+
+.crop-img-card {
+    height: 250px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.search-feedback {
+    text-align: center;
+    color: #6c757d;
+    margin: 2rem 0;
+}
+
+.no-results {
+    text-align: center;
+    padding: 3rem 0;
+}
+
+.search-highlight {
+    background-color: #fff3cd;
+    padding: 0 2px;
+    border-radius: 2px;
+    display: inline-block; /* Corrige o alinhamento */
+    line-height: normal; /* Mantém a linha alinhada */
+    vertical-align: baseline; /* Alinha com o texto base */
+    margin: 0 1px; /* Pequeno espaço para não colar nas outras letras */
+}
+
+/* Atualização do container de sugestões */
+.search-suggestions {
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+    width: 100%; /* Mesmo tamanho da searchBar */
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    max-height: 300px;
+    overflow-y: auto;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.search-container.search-active .search-suggestions:not(.d-none) {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Ajuste quando a busca está ativa */
+.search-active .search-suggestions {
+    transform: translateX(-50px); /* Mantém alinhado com a searchBar quando ativa */
+    width: calc(100% - 48px); /* Mantém a mesma largura da searchBar */
+}
+
+/* Ajuste do conteúdo das sugestões */
+.suggestions-content {
+    width: 100%;
+    padding: 4px 0;
+}
+
+/* Ajuste dos itens de sugestão */
+.suggestion-item {
+    padding: 12px 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-bottom: 1px solid #eee;
+    transition: background-color 0.2s;
+}
+
+.suggestion-item:last-child {
+    border-bottom: none;
+}
+
+.suggestion-item:hover {
+    background-color: #f8f9fa;
+}
+
+.suggestion-item img {
+    width: 24px;
+    height: 24px;
+    object-fit: cover;
+    border-radius: 2px;
+    flex-shrink: 0;
+}
+
+.suggestion-text {
+    flex: 1;
+    min-width: 0;
+    padding-right: 8px;
+}
+
+.suggestion-title {
+    font-size: 0.9rem;
+    margin-bottom: 2px;
+    color: #212529;
+}
+
+.suggestion-description {
+    font-size: 0.8rem;
+    color: #6c757d;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Estilização da barra de rolagem */
+.search-suggestions::-webkit-scrollbar {
+    width: 6px;
+}
+
+.search-suggestions::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 3px;
+}
+
+.search-suggestions::-webkit-scrollbar-thumb {
+    background: #ddd;
+    border-radius: 3px;
+}
+
+.search-suggestions::-webkit-scrollbar-thumb:hover {
+    background: #ccc;
+}
+
+/* Estilos para a navbar */
+.navbar {
+    background-color: var(--nav-bg) !important;
+    box-shadow: 0 2px 4px var(--shadow-color);
+    padding: 1rem 0; /* Aumenta o padding vertical */
+    min-height: 70px; /* Define uma altura mínima */
+}
+
+.navbar-brand img {
+    width: auto;
+    height: 40px; /* Aumenta o logo */
+}
+
+.navbar .nav-link {
+    font-weight: 600;
+    font-size: 1.1rem; /* Aumenta o tamanho da fonte */
+    color: var(--text-color) !important;
+    padding: 0.5rem 1rem; /* Aumenta o padding dos links */
+    transition: color 0.3s;
+}
+
+.navbar .nav-link:hover {
+    color: var(--primary-color) !important;
+}
+
+.navbar .form-control {
+    height: 40px; /* Aumenta a altura da barra de pesquisa */
+    font-size: 1rem;
+    border-radius: 6px;
+    border: 1px solid #dee2e6;
+}
+
+.navbar .form-control:focus {
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, .15);
+}
+
+.navbar .btn {
+    height: 40px; /* Mantém o botão de busca proporcional */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilos para o formulário de pesquisa */
+.navbar .d-flex {
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+/* Estado inicial da barra de pesquisa */
+.navbar .form-control {
+    width: 200px;
+    height: 40px;
+    font-size: 1rem;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+/* Estado ativo da pesquisa */
+.search-active {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    width: 600px;
+}
+
+.search-active .form-control {
+    width: 100%;
+    height: 50px;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 25px;
+}
+
+/* Container de sugestões */
+.search-suggestions {
+    position: fixed;
+    top: 80px; /* Distância da searchBar */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 600px; /* Mesmo tamanho da searchBar ativa */
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+/* Ajustes nos itens de sugestão */
+.suggestion-item {
+    padding: 12px 16px;
+    border-bottom: 1px solid #eee;
+}
+
+.suggestion-item:last-child {
+    border-bottom: none;
+}
+
+.suggestion-item:hover {
+    background-color: #f8f9fa;
+}
+
+/* Overlay para escurecer a página */
+.search-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 999;
+    backdrop-filter: blur(2px);
+}
+
+/* Ajuste para telas menores */
+@media (max-width: 768px) {
+    .search-active {
+        width: 90%;
+    }
+
+    .search-suggestions {
+        width: 90%;
+    }
+
+    .navbar-brand img {
+        height: 30px;
+    }
+
+    .crop-img-card {
+        height: 200px;
+    }
+}
+
+#resultsContainer {
+    margin-top: 2rem;
+}
+
+#resultsContainer .card {
+    border: none;
+    margin-bottom: 1.5rem;
+}
+
+.alert {
+    border-radius: 8px;
+    padding: 1.5rem;
+}
+
+/* Animações */
+@keyframes slideDown {
+    from {
+        transform: translateY(-10px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 2rem 0;
+}
+
+/* Estilos do carrossel */
+.carousel {
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin: 2rem auto;
+    position: relative;
+}
+
+.carousel-item {
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.6s ease-in-out;
+}
+
+.carousel-item img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(0.75);
+    transition: transform 0.3s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.carousel-item a {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.carousel-caption {
+    background: linear-gradient(0deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 50%, rgba(0,0,0,0) 100%);
+    border-radius: 0 0 16px 16px;
+    padding: 2rem;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.carousel-caption h5 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+.carousel-caption p {
+    font-size: 1.1rem;
+    color: #ffffff;
+    opacity: 0.95;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.5);
+}
+
+.carousel-fade .carousel-item {
+    opacity: 0;
+    transition: opacity 0.6s ease-in-out;
+}
+
+.carousel-fade .carousel-item.active {
+    opacity: 1;
+}
+
+.carousel-indicators {
+    margin-bottom: 1.5rem;
+    z-index: 15;
+}
+
+.carousel-indicators button {
+    background-color: rgba(255,255,255,0.7) !important;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 0 5px;
+    border: none !important;
+    transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+.carousel-indicators button.active {
+    background-color: #ffffff !important;
+    width: 30px;
+    border-radius: 15px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
+    transition: transform 0.3s ease;
+}
+
+.carousel-control-prev:hover .carousel-control-prev-icon {
+    transform: translateX(-5px);
+}
+
+.carousel-control-next:hover .carousel-control-next-icon {
+    transform: translateX(5px);
+}
+
+.carousel:hover .carousel-control-prev,
+.carousel:hover .carousel-control-next {
+    opacity: 0.8;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .carousel-item {
+        height: 300px;
+    }
+
+    .carousel-caption {
+        padding: 1rem;
+    }
+
+    .carousel-caption h5 {
+        font-size: 1.2rem;
+    }
+}
+
+/* Adicione o botão de alternância */
+.theme-toggle {
+    background: none;
+    border: none;
+    color: var(--text-color);
+    padding: 0.5rem 1rem;
+    margin-right: 1rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.theme-toggle:hover {
+    transform: scale(1.1);
+}
+
+.theme-toggle i {
+    font-size: 1.2rem;
+}
+
+[data-theme="dark"] .theme-toggle i.fa-moon {
+    display: none;
+}
+
+[data-theme="dark"] .theme-toggle i.fa-sun {
+    display: inline-block;
+}
+
+[data-theme="light"] .theme-toggle i.fa-moon {
+    display: inline-block;
+}
+
+[data-theme="light"] .theme-toggle i.fa-sun {
+    display: none;
+}
+
+/* Estilos para os cards com imagens */
+.prayer-card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background-color: var(--card-bg);
+    transition: transform 0.3s ease;
+}
+
+.prayer-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Container de Imagem */
+.prayer-image-container {
+    position: relative;
+    padding-top: 133%;
+    overflow: hidden;
+    border-radius: 8px;
+    margin: 1rem;
+}
+
+.prayer-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.prayer-image:hover {
+    transform: scale(1.05);
+}
+
+/* Conteúdo */
+.prayer-content {
+    padding-left: 1rem;
+}
+
+/* Metadados */
+.prayer-metadata {
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.prayer-divider {
+    height: 1px;
+    background-color: var(--border-color);
+    margin: 1rem 0;
+}
+
+.badge {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .prayer-content {
+        text-indent: 1rem;
+    }
+    
+    .prayer-metadata {
+        margin-top: 1rem;
+    }
+}
+
+.prayer-images-sidebar {
+    position: sticky;
+    top: 100px;
+    padding: 1rem;
+}
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+    .prayer-images-sidebar {
+        position: static;
+        padding: 1rem 0;
+    }
+
+    .prayer-image-container {
+        padding-top: 75%;
+        margin-bottom: 1rem;
+    }
+}
+
+/* Galeria de imagens */
+.image-gallery {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.image-gallery img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+/* Seção de orações */
+.prayer-section {
+    border-left: 3px solid var(--primary-color);
+    padding-left: 1.5rem;
+    margin-bottom: 2rem;
+    background-color: var(--card-bg);
+    border-radius: 0 8px 8px 0;
+}
+
+.prayer-verse {
+    padding: 1rem;
+    background-color: var(--light);
+    border-radius: 8px;
+}
+
+.verse-line {
+    margin-bottom: 1rem;
+}
+
+.verse-line p {
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+}
+
+.verse-line .response {
+    padding-left: 1.5rem;
+    color: var(--text-muted);
+}
+
+/* Container das Invocações */
+.invocation-container {
+    background-color: var(--light);
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    border-left: 3px solid var(--primary-color);
+    transition: transform 0.3s ease;
+}
+
+.invocation-container:hover {
+    transform: translateX(5px);
+}
+
+.prayer-text {
+    text-indent: 1.5rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.prayer-instructions {
+    padding-top: 0.8rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.prayer-instructions a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.prayer-instructions a:hover {
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+
+/* Layout Principal */
+.hero-card {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.section-card {
+    margin-bottom: 2rem;
+}
+
+.section-title {
+    color: var(--primary-color);
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+/* Containers de Oração */
+.prayer-sections {
+    background-color: var(--light);
+    border-radius: 12px;
+    padding: 1.5rem;
+}
+
+.invocations-container {
+    background-color: var(--card-bg);
+    border-radius: 8px;
+    padding: 1.5rem;
+}
+
+/* Sidebar */
+.sticky-sidebar {
+    position: sticky;
+    top: 2rem;
+}
+
+.info-card {
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Lista de Promessas */
+.promise-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.promise-list li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.8rem;
+}
+
+.promise-list li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .sticky-sidebar {
+        position: static;
+    }
+}
+>>>>>>> 30c33b5 (version 2.0)
