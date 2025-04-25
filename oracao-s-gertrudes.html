@@ -17,59 +17,74 @@
 <body>
 
   <!-- Navbar atualizada -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">
-            <img src="img/icone.png" alt="Regina Rosarii" width="30" height="24">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link" href="proposito.html">Propósito</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="https://discord.gg/4kk9m58W4n">Discord</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="rosario.html" id="rosarioDropdown" 
-                       data-bs-toggle="dropdown" aria-expanded="false">
-                        Santo Rosário
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="rosarioDropdown">
-                        <li><a class="dropdown-item" href="rosario.html#oracao-inicial">Como Rezar</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="rosario.html#m-gozosos">Mistérios Gozosos</a></li>
-                        <li><a class="dropdown-item" href="rosario.html#m-dolorosos">Mistérios Dolorosos</a></li>
-                        <li><a class="dropdown-item" href="rosario.html#m-gloriosos">Mistérios Gloriosos</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="rosario.html#salve-regina">Salve Rainha</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle active" href="#" id="oracoesDropdown" 
-                       data-bs-toggle="dropdown" aria-expanded="false">
-                        Orações
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="oracoesDropdown">
-                        <li><a class="dropdown-item" href="oracoes-basicas.html">Orações Básicas</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="oracao-anjo-brasil.html">Anjo da Guarda do Brasil</a></li>
-                        <li><a class="dropdown-item" href="coroa-de-sao-miguel.html">Coroa de São Miguel</a></li>
-                        <li><a class="dropdown-item active" href="quaresma-s-miguel.html">Quaresma de São Miguel</a></li>
-                    </ul>
-                </li>
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="img/icone.png" alt="Regina Rosarii">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="proposito.html">Propósito</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="rosario.html" id="navbarDropdownRosario" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Rosário
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownRosario">
+              <li><a class="dropdown-item" href="rosario.html#m-gozosos">Mistérios Gozosos</a></li>
+              <li><a class="dropdown-item" href="rosario.html#m-dolorosos">Mistérios Dolorosos</a></li>
+              <li><a class="dropdown-item" href="rosario.html#m-gloriosos">Mistérios Gloriosos</a></li>
             </ul>
-            <div class="d-flex">
-                <button class="btn btn-outline-primary" id="themeToggle">
-                    <i class="fas fa-moon"></i>
-                </button>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownOracoes" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Orações
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownOracoes">
+              <li><a class="dropdown-item" href="oracoes-basicas.html">Orações Básicas</a></li>
+              <li><a class="dropdown-item" href="oracoes-santos.html">Orações aos Santos</a></li>
+              <li><a class="dropdown-item" href="coroa-de-sao-miguel.html">Coroa de São Miguel</a></li>
+              <li><a class="dropdown-item" href="angelus.html">Angelus</a></li>
+              <li><a class="dropdown-item" href="oracao-s-gertrudes.html">Oração de Santa Gertrudes</a></li>
+              <li><a class="dropdown-item" href="oracao-anjo-brasil.html">Oração ao Anjo do Brasil</a></li>
+              <li><a class="dropdown-item" href="quaresma-s-miguel.html">Quaresma de São Miguel</a></li>
+            </ul>
+          </li>
+        </ul>
+        
+        <!-- Novo container de pesquisa alinhado à direita -->
+        <div class="navbar-nav ms-auto">
+          <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema">
+            <i class="fas fa-moon"></i>
+          </button>
+          <div class="search-container">
+            <form class="d-flex search-form" action="resultados.html" method="GET">
+              <input 
+                type="search" 
+                id="navSearchInput" 
+                name="q"
+                class="form-control" 
+                placeholder="Buscar..."
+                aria-label="Buscar"
+                autocomplete="off">
+              <button class="btn btn-outline-primary" type="submit">
+                <i class="fas fa-search"></i> <!-- Ícone de lupa do FontAwesome -->
+              </button>
+            </form>
+            <div id="searchSuggestions" class="search-suggestions d-none">
+              <div class="suggestions-content">
+                <!-- As sugestões serão inseridas aqui via JavaScript -->
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </div>
-</nav>
+  </nav>
 
       <div id="oracao-s-gertrudes" class="container-fluid mb-4 lg-3" style="max-width: 1400px;">
         <div class="container-fluid mb-4">

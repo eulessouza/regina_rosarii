@@ -16,9 +16,74 @@
     </head>
 <body>
     <!-- Navbar existente -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light mb-4">
-        <!-- ...existing navbar code... -->
-    </nav>
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <img src="img/icone.png" alt="Regina Rosarii">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="proposito.html">Propósito</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="rosario.html" id="navbarDropdownRosario" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Rosário
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownRosario">
+                  <li><a class="dropdown-item" href="rosario.html#m-gozosos">Mistérios Gozosos</a></li>
+                  <li><a class="dropdown-item" href="rosario.html#m-dolorosos">Mistérios Dolorosos</a></li>
+                  <li><a class="dropdown-item" href="rosario.html#m-gloriosos">Mistérios Gloriosos</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownOracoes" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Orações
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownOracoes">
+                  <li><a class="dropdown-item" href="oracoes-basicas.html">Orações Básicas</a></li>
+                  <li><a class="dropdown-item" href="oracoes-santos.html">Orações aos Santos</a></li>
+                  <li><a class="dropdown-item" href="coroa-de-sao-miguel.html">Coroa de São Miguel</a></li>
+                  <li><a class="dropdown-item" href="angelus.html">Angelus</a></li>
+                  <li><a class="dropdown-item" href="oracao-s-gertrudes.html">Oração de Santa Gertrudes</a></li>
+                  <li><a class="dropdown-item" href="oracao-anjo-brasil.html">Oração ao Anjo do Brasil</a></li>
+                  <li><a class="dropdown-item" href="quaresma-s-miguel.html">Quaresma de São Miguel</a></li>
+                </ul>
+              </li>
+            </ul>
+            
+            <!-- Novo container de pesquisa alinhado à direita -->
+            <div class="navbar-nav ms-auto">
+              <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema">
+                <i class="fas fa-moon"></i>
+              </button>
+              <div class="search-container">
+                <form class="d-flex search-form" action="resultados.html" method="GET">
+                  <input 
+                    type="search" 
+                    id="navSearchInput" 
+                    name="q"
+                    class="form-control" 
+                    placeholder="Buscar..."
+                    aria-label="Buscar"
+                    autocomplete="off">
+                  <button class="btn btn-outline-primary" type="submit">
+                    <i class="fas fa-search"></i> <!-- Ícone de lupa do FontAwesome -->
+                  </button>
+                </form>
+                <div id="searchSuggestions" class="search-suggestions d-none">
+                  <div class="suggestions-content">
+                    <!-- As sugestões serão inseridas aqui via JavaScript -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
 
     <div class="container">
         <div class="row justify-content-center">
@@ -61,7 +126,7 @@
           <script src="js/main.js"></script>
       <script src="js/search.js"></script>
       <script src="https://kit.fontawesome.com/869daa3fbc.js" crossorigin="anonymous"></script>
-      <script src="bootstrap/js/bootstrap.js"></script>  
-          <script src="js/navSearch.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="js/navSearch.js"></script>
 </body>
 </html>
