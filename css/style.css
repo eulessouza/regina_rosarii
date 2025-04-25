@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> origin/master
 :root {
     /* Modo claro (padrão) */
     --primary-color: #1a4b84;
@@ -37,10 +32,6 @@ body {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-<<<<<<< HEAD
->>>>>>> 30c33b5 (version 2.0)
-=======
->>>>>>> origin/master
 #entrada {
     background-position: 10px 12px;
     background-repeat: no-repeat;
@@ -48,20 +39,6 @@ body {
     padding: 12px 20px 12px 40px;
     border: 1px solid #ddd;
     margin-bottom: 12px;
-<<<<<<< HEAD
-<<<<<<< HEAD
-  }
-  
-  #filter-list {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  #filter-list li a {
-=======
-=======
->>>>>>> origin/master
 }
 
 #filter-list {
@@ -71,28 +48,11 @@ body {
 }
 
 #filter-list li a {
-<<<<<<< HEAD
->>>>>>> 30c33b5 (version 2.0)
-=======
->>>>>>> origin/master
     border: 1px solid #ddd;
     margin-top: -1px;
     background-color: #f6f6f6;
     padding: 12px;
     text-decoration: none;
-<<<<<<< HEAD
-<<<<<<< HEAD
-    
-    color: black;
-    display: block;
-  }
-  
-  #filter-list li a:hover:not(.header) {
-    background-color: #eee;
-  }
-=======
-=======
->>>>>>> origin/master
     color: black;
     display: block;
 }
@@ -1084,9 +1044,23 @@ footer {
     .sticky-sidebar {
         position: static;
     }
-<<<<<<< HEAD
 }
->>>>>>> 30c33b5 (version 2.0)
-=======
+
+/* Estilos para o botão de alternância */
+.dropdown-toggle-split {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    margin-left: -0.3rem;
 }
->>>>>>> origin/master
+
+.nav-item.dropdown .d-flex {
+    position: relative;
+}
+
+.nav-item.dropdown .dropdown-toggle::after {
+    margin-left: 0.5em;
+}
+
+.dropdown-menu {
+    margin-top: 0.5rem;
+}
