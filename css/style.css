@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> origin/master
 :root {
     /* Modo claro (padrão) */
     --primary-color: #1a4b84;
@@ -34,7 +37,10 @@ body {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+<<<<<<< HEAD
 >>>>>>> 30c33b5 (version 2.0)
+=======
+>>>>>>> origin/master
 #entrada {
     background-position: 10px 12px;
     background-repeat: no-repeat;
@@ -42,6 +48,7 @@ body {
     padding: 12px 20px 12px 40px;
     border: 1px solid #ddd;
     margin-bottom: 12px;
+<<<<<<< HEAD
 <<<<<<< HEAD
   }
   
@@ -53,6 +60,8 @@ body {
   
   #filter-list li a {
 =======
+=======
+>>>>>>> origin/master
 }
 
 #filter-list {
@@ -62,12 +71,16 @@ body {
 }
 
 #filter-list li a {
+<<<<<<< HEAD
 >>>>>>> 30c33b5 (version 2.0)
+=======
+>>>>>>> origin/master
     border: 1px solid #ddd;
     margin-top: -1px;
     background-color: #f6f6f6;
     padding: 12px;
     text-decoration: none;
+<<<<<<< HEAD
 <<<<<<< HEAD
     
     color: black;
@@ -78,6 +91,8 @@ body {
     background-color: #eee;
   }
 =======
+=======
+>>>>>>> origin/master
     color: black;
     display: block;
 }
@@ -1069,5 +1084,9 @@ footer {
     .sticky-sidebar {
         position: static;
     }
+<<<<<<< HEAD
 }
 >>>>>>> 30c33b5 (version 2.0)
+=======
+}
+>>>>>>> origin/master

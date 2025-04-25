@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 function myFunction() {
   // Declare variables
   var input, filter, ul, li, a, i, txtValue;
@@ -19,6 +20,8 @@ function myFunction() {
   }
 }
 =======
+=======
+>>>>>>> origin/master
 document.addEventListener('DOMContentLoaded', () => {
     const searchInput = document.getElementById('searchInput');
     const searchResults = document.getElementById('searchResults');
@@ -92,5 +95,9 @@ document.addEventListener('DOMContentLoaded', () => {
             searchResults.classList.add('d-none');
         }
     });
+<<<<<<< HEAD
 });
 >>>>>>> 30c33b5 (version 2.0)
+=======
+});
+>>>>>>> origin/master
