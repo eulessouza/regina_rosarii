@@ -1,0 +1,74 @@
+/* Add a new CSS file for cleaner organization */
+
+:root {
+  --primary-color: #f8f9fa;
+  --secondary-color: #e9ecef;
+  --accent-color: #6c757d;
+  --text-color: #212529;
+  --link-color: #0d6efd;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+.navbar {
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.img-bg {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('img/background.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 4rem 0;
+  margin-bottom: 2rem;
+}
+
+.card {
+  border: none;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  margin-bottom: 2rem;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+}
+
+.card-title {
+  color: var(--text-color);
+  font-weight: 600;
+}
+
+.card-text {
+  color: var(--accent-color);
+}
+
+.list-group-item {
+  border: none;
+  padding: 1rem;
+}
+
+.list-group-item:hover {
+  background-color: var(--secondary-color);
+}
+
+.rounded-start {
+  object-fit: cover;
+  height: 100%;
+}
+
+footer {
+  background-color: var(--secondary-color);
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+  .card-img {
+    height: 200px;
+    object-fit: cover;
+  }
+}

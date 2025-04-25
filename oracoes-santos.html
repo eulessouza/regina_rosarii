@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Regina Rosarii</title>
+    <link rel="icon" 
+      type="image/png" 
+      href="img/icone.png" />
+    <script src="js/theme.js"></script>
+    <script src="https://kit.fontawesome.com/869daa3fbc.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="img/icone.png" alt="Regina Rosarii">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="proposito.html">Propósito</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="rosario.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Rosário
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="rosario.html#oracao-inicial">Início</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="rosario.html#m-gozosos">Mistérios Gozosos</a></li>
+              <li><a class="dropdown-item" href="rosario.html#m-dolorosos">Mistérios Dolorosos</a></li>
+              <li><a class="dropdown-item" href="rosario.html#m-gloriosos">Mistérios Gloriosos</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="rosario.html#salve-regina">Agradecimento</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Orações
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="oracoes-basicas.html">Orações clássicas</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="oracoes-santos.html">Orações a santos</a></li>
+              <li><a class="dropdown-item" href="coroa-de-sao-miguel.html">Coroa de São Miguel Arcanjo</a></li>
+            </ul>
+          </li>
+        </ul>
+        
+        <!-- Novo container de pesquisa alinhado à direita -->
+        <div class="navbar-nav ms-auto">
+          <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema">
+            <i class="fas fa-moon"></i>
+          </button>
+          <div class="search-container">
+            <form class="d-flex search-form" action="resultados.html" method="GET">
+              <input 
+                type="search" 
+                id="navSearchInput" 
+                name="q"
+                class="form-control" 
+                placeholder="Buscar..."
+                aria-label="Buscar"
+                autocomplete="off">
+              <button class="btn btn-outline-primary" type="submit">
+                <i class="fas fa-search"></i> <!-- Ícone de lupa do FontAwesome -->
+              </button>
+            </form>
+            <div id="searchSuggestions" class="search-suggestions d-none">
+              <div class="suggestions-content">
+                <!-- As sugestões serão inseridas aqui via JavaScript -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+      <div id="" class="container" style="max-width: 1400px">
+        <div class="container-fluid mb-4 oracoes-classicas-bg">
+          <h1>Orações devocionais</h1>
+          <p>Seguem as orações devocionais da Igreja Católica. Sempre ao lado da oração virá a versão em Latim, língua oficial da Igreja, posto que sendo o latim uma língua morta, os significados originais nunca poderão ser alterados por gírias, expressões de época ou interpretações que não estejam conformes à Santa Igreja Católica, que já conta milênios de sua existência.</p>
+        </div>
+
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2968203669378969"
+         crossorigin="anonymous"></script>
+    <!-- Ads horizontal -->
+    <ins class="adsbygoogle"
+         style="display:flex;background-color: gray;"
+         data-ad-client="ca-pub-2968203669378969"
+         data-ad-slot="6985816145"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+
+        <div class="search-container mb-4">
+          <div class="input-group">
+            <span class="input-group-text">
+              <i class="fas fa-search"></i>
+            </span>
+            <input 
+              type="text" 
+              id="searchInput" 
+              class="form-control" 
+              placeholder="Digite para pesquisar orações..."
+              aria-label="Pesquisar orações">
+          </div>
+          <div id="searchResults" class="search-results d-none">
+            <ul id="prayer-list" class="list-group mt-3">
+            </ul>
+          </div>
+        </div>
+
+        <div class="container mb-4">
+        <div id="s-miguel" class="card lg-3" style="max-width: 1400px;">
+          <div class="row g-0">
+            <div class="col-lg-4 p-xxl-3"">
+              <img src="https://www.miliciadaimaculada.org.br/source/files/c/14471/sao_miguel-720482_1028-558-0-0.jpg" class="img-fluid rounded-start" " alt="...">
+            </div>
+            <div class="col-md-4">
+              <div class="card-body">
+                <h5 class="card-title fw-bolder">São Miguel Arcanjo</h5>
+                <p class="card-text">São Miguel Arcanjo, defendei-nos no combate, sede nosso refúgio contra a maldade e as ciladas do demônio! Ordene-lhe Deus, 
+                  instantemente o pedimos; e vós, príncipe da milícia celeste, pela virtude divina, precipitai ao inferno a Satanás e a todos os espíritos malignos, 
+                  que andam pelo mundo para perder as almas. Amém.
+                <br><br>São Miguel, assisti-nos com os vossos Anjos,
+                ajudai-nos e rogai por nós!
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card-body">
+                <h5 class="card-title fw-bolder">Sancte Michael Archangele</h5>
+                <p class="card-text"> 
+                  Sancte Michael Archangele, defende nos in praelio, contra nequitias et insidias diaboli esto praesidium: Imperet illi Deus, supplices deprecamur, tuque, 
+                  Princeps militiae caelestis, satanam aliosque spiritus malignos, qui ad perditionem animarum pervagantur in mundo, divina virtute in infernum detrude. Amen.
+                <br><br>Sancte Michael, Angelis tuis nos adiuva;
+                adiuva nos et ora pro nobis!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="s-gabriel" class="card lg-3" style="max-width: 1400px;">
+          <div class="row g-0">
+            <div class="col-lg-4 p-xxl-3"">
+              <img src="https://www.nossasagradafamilia.com.br/imagens/uploads/conteudos/crop_2017080216062126zKUQHq3.jpg" class="img-fluid rounded-start" " alt="...">
+            </div>
+            <div class="col-md-4">
+              <div class="card-body">
+                <h5 class="card-title fw-bolder">Comemoração de São Gabriel Arcanjo</h5>
+                <p class="card-text">Ó glorioso Príncipe, Gabriel Arcanjo, lembrai de nós, aqui e em toda parte: rogai sempre ao Filho de Deus por nós, Aleluia, Aleluia.<br><br>
+                  V. Um anjo estava perto do altar do templo.<br>
+                  R. Segurando um incensário de ouro na mão.<br><br>
+
+                  Ó Deus, que entre todos os Anjos escolheste o Arcanjo Gabriel para anunciar o mistério da Tua Encarnação; conceda misericordiosamente que nós, 
+                  que solenemente celebramos sua festa na terra, possamos sentir o benefício de seu patrocínio no céu: quem vive e reina para todo o sempre. Amém.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card-body">
+                <h5 class="card-title fw-bolder">Commemoratio Sancti Gabrielis Archangeli</h5>
+                <p class="card-text"> 
+                  Princeps gloriosissime, Gabriel Archangele, esto memor nostri: hic et ubique semper precare pro nobis Filium Dei, alleluia, alleluia.<br><br>
+                  V. Stetit Angelus iuxta aram templi.<br>
+                  R. Habens turibulum aureum in manu sua.<br><br>
+                  DEUS, qui inter ceteros Angelos, ad annuntiandum incarnationis tuae mysterium, Gabrielem Archangelum elegisti; concede propitius, 
+                  ut qui festum eius celebramus in terris, ipsius patrocinium sentiamus in caelis: qui vivis et regnas in saecula saeculorum. Amen.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div id="s-rafael" class="card lg-3" style="max-width: 1400px;">
+          <div class="row g-0">
+            <div class="col-lg-4 p-xxl-3"">
+              <img src="https://s.calendarr.com/upload/datas/sa/or/sao-rafael_c.jpg?auto_optimize=high&width=640" class="crop2 rounded-start" " alt="...">
+            </div>
+            <div class="col-md-4">
+              <div class="card-body">
+                <h5 class="card-title fw-bolder">São Rafael Arcanjo</h5>
+                <p class="card-text">Dignai-nos, Senhor Deus, enviar em nosso auxílio São Rafael, o Arcanjo: e que aquele que, cremos, está sempre diante do trono de Tua majestade, ofereça a Ti nossas humildes petições para ser abençoado por Ti. Por Cristo nosso Senhor. Amém.</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card-body">
+                <h5 class="card-title fw-bolder">Ad Sanctum Raphaelem Archangelum</h5>
+                <p class="card-text"> 
+                  Dirigere dignare, Domine Deus, in adiutorium nostrum, sanctum Raphaelem Archangelum; et quem tuae maiestati semper assistere credimus, tibi nostras exiguas preces benedicendas assignet. Per Christum Dominum nostrum. Amen.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="s-jose" class="card lg-3" style="max-width: 1400px;">
+          <div class="row g-0">
+            <div class="col-lg-4 p-xxl-3"">
+              <img src="https://santhatela.com.br/wp-content/uploads/2018/02/murillo-sao-jose-e-jesus-d.jpg" class="crop1 rounded-start"  alt="...">
+            </div>
+            <div class="col-md-4">
+              <div class="card-body">
+                <h5 class="card-title fw-bolder">São José</h5>
+                <p class="card-text">Oh, São José, pai adotivo de Jesus, puríssimo esposo da Virgem Maria, rogai por nós diariamente ao mesmo Jesus, o Filho de Deus, que nós, sendo defendidos pela força de sua graça e lutando fielmente na vida, pode ser coroado por Ele na hora da morte. Amém.</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card-body">
+                <h5 class="card-title fw-bolder">O Ioseph, Virgo Pater Iesu</h5>
+                <p class="card-text"> 
+                  O Ioseph, Virgo Pater Iesu, purissime Sponse Virginis Mariae, quotidie deprecare pro nobis ipsum Iesum Filium Dei, ut, armis suae gratiae muniti legitime certantes in vita, ab eodem coronemur in morte. Amen.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4 p-xxl-3"">
+              <img src="http://blog.cancaonova.com/tododemaria/files/2016/03/O-amor-de-S%C3%A3o-Jos%C3%A9-a-Jesus-a-Maria-e-a-n%C3%B3s.jpg" class="img-fluid rounded-start"  alt="...">
+            </div>
+            <div class="col-md-4">
+              <div class="card-body">
+                <h5 class="card-title fw-bolder">Lembrai de nós, ó bem-aventurado José</h5>
+                <p class="card-text">Lembrai de nós, ó bem-aventurado José, e intercede por nós junto ao teu filho adotivo pela súplica da tua oração; da mesma maneira, fazei a bem-aventurada Virgem Maria, tua Esposa, misericordiosa para conosco, porque ela é a Mãe Dele, que com o Pai e o Espírito Santo vive e reina no mundo sem fim. Amém.</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card-body">
+                <h5 class="card-title fw-bolder">Memento nostri, beate Ioseph</h5>
+                <p class="card-text"> 
+                  Memento nostri, beate Ioseph, et tuae orationis suffragio apud tuum putativum Filium intercede; sed et beatissimam Virginem Sponsam tuam nobis propitiam redde, quae Mater est Eius, qui cum Patre et Spiritu Sancto vivit et regnat per infinita saecula saeculorum. Amen.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="s-dsavio" class="card lg-3" style="max-width: 1400px;">
+          <div class="row g-0">
+            <div class="col-lg-4 p-xxl-3"">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/b/bc/Z_domingo_savio.jpg" class="crop1 rounded-start"  alt="...">
+            </div>
+            <div class="col-md-4">
+              <div class="card-body">
+                <h5 class="card-title fw-bolder">Oração a São Domingos Sávio</h5>
+                <p class="card-text">Suplico-vos glorioso São Domingos Sávio, pela vossa admirável pureza.
+                  Que me dê o desejo de vos imitar nessas angélicas virtudes, vencendo em todas as ocasiões, de modo que eu as
+                  conserve inviolada até me unir convosco na celeste bem-aventurança prometida aos inocentes e limpos de coração.
+                  Amém.</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card-body">
+                <h5 class="card-title fw-bolder fst-italic">*Sem latim*</h5>
+                <p class="card-text"> 
+                  Contribua com o site enviado a tradução desta oração em reginasrosarii@gmail.com
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="s-teresajesus" class="card lg-3" style="max-width: 1400px;">
+          <div class="row g-0">
+            <div class="col-lg-4 p-xxl-3"">
+              <img src="https://img.cancaonova.com/cnimages/canais/uploads/sites/2/2019/10/Santo-do-dia.png" class="crop3 rounded-start"  alt="...">
+            </div>
+            <div class="col-md-4">
+              <div class="card-body">
+                <h5 class="card-title fw-bolder">Oração a Santa Tereza de Jesus</h5>
+                <p class="card-text">“Nada te perturbe, nada te amedronte, tudo passa, a paciência tudo alcança.<br>
+                  A quem tem Deus nada falta. Só Deus basta.”<br>
+                  Ó Santa Tereza de Jesus, vós sóis a mestra da genuína oração e nos ensinais a rezar conversando com Deus, Pai Filho e Espírito Santo.<br>
+                  Ó Santa Tereza, ajudai-nos a rezar com fé e confiança, sem nunca duvidar da bondade divina.<br>
+                  Ajudai-nos a rezar com inteira conformidade de vossa vontade com a vontade de Deus, com insistente perseverança até alcançarmos aquilo que necessitamos.<br>
+                  Ó Santa Tereza, fazei-nos fiéis a nossa oração da manhã e da noite, e a transformar em oração o cumprimento de nossas tarefas de cada dia.<br>
+                  Que a oração seja para nós a porta de nossa conversão e santificação, a chave de ouro que nos abrirá as portas do Céu.<br>
+                  Amém.<br><br>
+                  
+                  Santa Tereza de Jesus, Rogai por nós.</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card-body">
+                <h5 class="card-title fw-bolder fst-italic">*Sem latim*</h5>
+                <p class="card-text"> 
+                  Contribua com o site enviado a tradução desta oração em reginasrosarii@gmail.com
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="s-fassis" class="card lg-3" style="max-width: 1400px;">
+          <div class="row g-0">
+            <div class="col-lg-4 p-xxl-3"">
+              <img src="https://www.rbsdirect.com.br/filestore/3/9/3/6/1/2/1_06433d761e940c4/1216393_f1af222d7e68d05.jpg?w=700" class="img-fluid rounded-start"  alt="...">
+            </div>
+            <div class="col-md-4">
+              <div class="card-body">
+                <h5 class="card-title fw-bolder">Oração a São Francisco de Assis</h5>
+                <p class="card-text">Este homem, desprezando o mundo e triunfando sobre as coisas terrenas, acumulou riquezas no céu por palavras e obras.<br><br>
+                  V. Nosso Senhor guiou os justos por caminhos retos.<br>
+                  R. E mostrou-lhe o reino de Deus.<br><br>
+                  Ó Senhor Jesus Cristo, que quando o mundo estava se esfriando, renovaste na carne do bem-aventurado São Francisco as sagradas marcas de tua 
+                  Paixão para inflamar nossos corações com o fogo de teu amor: misericordiosamente concede que, por seus méritos e orações, podemos sempre carregar a 
+                  Cruz e produzir frutos dignos de arrependimento: Quem vive e reina para todo o sempre. Amém.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card-body">
+                <h5 class="card-title fw-bolder">Commemoratio Sancti Francisci Assisiensis</h5>
+                <p class="card-text"> 
+                  Hic vir despiciens mundum et terrena triumphans, divitias caelo condidit ore et manu.<br><br>
+                  V. Iustum deduxit Dominus per vias rectas.<br>
+                  R. Et ostendit illi regnum Dei.<br><br>
+                  DOMINE Iesu Christe, qui frigescente mundo, ad inflammandum corda nostra tui amoris igne, in carne beatissimi Francisci Passionis tuae sacra Stigmata
+                   renovasti: concede propitius, ut eius meritis et precibus crucem iugiter feramus et dignos fructus paenitentiae faciamus: qui vivis et regnas in saecula saeculorum. Amen.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="s-agostinho" class="card lg-3" style="max-width: 1400px;">
+          <div class="row g-0">
+            <div class="col-lg-4 p-xxl-3"">
+              <img src="https://thumbs.jusbr.com/imgs.jusbr.com/publications/images/e0f1bd0eaf8630fc32082d9b67699755" class="img-fluid rounded-start" " alt="...">
+            </div>
+            <div class="col-md-4">
+              <div class="card-body">
+                <h5 class="card-title fw-bolder">Oração a Santo Agostinho</h5>
+                <p class="card-text"><p class="fw-bolder">Benção de Santo Agostinho</p>
+
+                  "Santo Agostinho, cheio de dignidade, de amor fervoroso e brilho incansável, ampara-nos e protege-nos da infelicidade, do perigo, da calúnia,
+                  dando-nos sabedoria, discernimento, calma e presença de amor divino. Não permita que nos distanciemos da doutrina de Deus, de quem o amor ardoroso
+                  e supremo eterniza a nossa vida. Santo Agostinho poderoso, abençoa cada um que lhe procura num momento de socorro, de nostalgia e falta de direção.
+                  Santo Agostinho, realiza milagres por nós, em nome de Deus Pai Todo-Poderoso. Assim seja!"<br><br>
+                  
+                  <p class="fw-bolder">Agradecimento a Santo Agostinho</p>
+                  
+                  "Agradecemos pela mensagem divina que nos passa todos os dias, por meio de sua devoção a Jesus Cristo e vossa eterna luta por ter alcançado o caminho
+                  cristão; agradecemos pela pureza que tem em vossas palavras de sabedoria, que nos ampara tão confortavelmente em nosso dia a dia; agradecemos por ter
+                  sido um bispo de alma fortalecida e ter acolhido muitos(as) servos(as) que se encontravam no mundo das trevas; agradecemos por ser o doutor da Igreja
+                  e, ainda, por abençoar as mãos de todos os médicos quando os mesmos estão realizando seus trabalhos; agradecemos por ser o padroeiro dos editores,
+                  dando-lhes mentes brilhantes, sábias e com discernimento para escrever os fatos do nosso cotidiano. Santo Agostinho querido, somos gratos por ter
+                  acreditado em nós e, por isso, rogamos a vós todos os minutos de nossa existência. Amém!"</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card-body">
+                <h5 class="card-title fw-bolder fst-italic">*Sem latim*</h5>
+                <p class="card-text"> 
+                  Contribua com o site enviado a tradução desta oração em reginasrosarii@gmail.com
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="n-s-das-gracas" class="card lg-3" style="max-width: 1400px;">
+          <div class="row g-0">
+            <div class="col-lg-4 p-xxl-3"">
+              <img src="https://cdn.arquidiocesesalvador.org.br/wp-content/uploads/2020/11/Nossa-Senhora-das-Gracas2-1.jpg" class="img-fluid rounded-start" " alt="...">
+            </div>
+            <div class="col-md-4">
+              <div class="card-body">
+                <h5 class="card-title fw-bolder">Oração a Nossa Senhora Das Graças</h5>
+                <p class="card-text"><p class="fw-bolder">Súplica</p>
+
+                Ó Imaculada Virgem Mãe de Deus e nossa Mãe, ao comtemplar-vos de braços abertos derramando graças sobre os que vo-las pedem, cheios de confiança na vossa poderosa intercessão, inúmeras vezes manifestada pela Medalha Milagrosa, embora reconhecendo a nossa indignidade por causa de nossas inúmeras culpas, acercamo-nos de vossos pés para vos expor, durante esta oração, as nossas mais prementes necessidades (momento de silêncio e de pedir a graça desejada).
+                Concedei, pois, ó Virgem da Medalha Milagrosa, este favor que confiantes vos solicitamos, para maior glória de Deus, engrandecimento do vosso nome, e o bem de nossas almas.
+                E para melhor servirmos ao vosso Divino Filho, inspirai-nos profundo ódio ao pecado e dai-nos coragem de nos afirmar sempre verdadeiros cristãos. Amém.<br><br>
+                
+                <p class="fw-bolder">Rezar 3 <small class="text-muted"><a href="oracoes-basicas.html#ave-maria">Ave Marias…</a></small></p>
+
+                <p class="fw-bolder">– Ó Maria concebida sem pecado, rogai por nós que recorremos a vós.</p>
+                  
+                <p class="fw-bolder">Oração Final:</p>Santíssima Virgem, eu creio e confesso vossa Santa e Imaculada Conceição, pura e sem mancha. Ó puríssima Virgem Maria,
+                por vossa Conceição Imaculada e gloriosa prerrogativa de Mãe de Deus, alcançai-me de vosso amado Filho a humildade, a caridade,
+                a obediência, a castidade, a santa pureza de coração, de corpo e espírito, a perseverança na prática do bem, uma santa vida e uma boa morte. Amém.</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card-body">
+                <h5 class="card-title fw-bolder fst-italic">*Sem latim*</h5>
+                <p class="card-text"> 
+                  Contribua com o site enviado a tradução desta oração em reginasrosarii@gmail.com
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="s-jbatista" class="card lg-3" style="max-width: 1400px;">
+          <div class="row g-0">
+            <div class="col-lg-4 p-xxl-3"">
+              <img src="https://www.nossasagradafamilia.com.br/imagens/uploads/conteudos/crop_20170526180147y1YhPXV4f3.jpg" class="img-fluid rounded-start" " alt="...">
+            </div>
+            <div class="col-md-4">
+              <div class="card-body">
+                <h5 class="card-title fw-bolder">Oração de São João Batista</h5>
+                <p class="card-text">
+                  Glorioso São João Batista, que fostes santificado no seio materno, ao ouvir vossa mãe a saudação de Maria Santíssima, e canonizado ainda em vida pelo mesmo 
+                  Jesus Cristo que declarou solenemente não haver entre os nascidos de mulheres nenhum maior que vós; por intercessão da Virgem e pelos infinitos merecimentos 
+                  de seu divino Filho, de quem fostes precursor, anunciando-o como Mestre e apontando-o como o Cordeiro de Deus que tira o pecado do mundo, alcançai-nos a graça 
+                  de darmos também nós testemunho da verdade e selá-lo até, se preciso for, com o próprio sangue, como o fizestes vós, degolado iniquamente por ordem de um rei 
+                  cruel e sensual, cujos desmandos e caprichos havíeis justamente denunciado.<br><br>
+
+                  Abençoai todos os que vos invocam e fazei que aqui floresçam todas as virtudes que praticastes em vida, para que, verdadeiramente animados do vosso espírito,
+                   no estado em que Deus nos colocou, possamos um dia gozar convosco da bem-aventurança eterna. Amém.<br><br>
+                  
+                  Rezar 1 <small class="text-muted"><a href="oracoes-basicas.html#pai-nosso">Pai Nosso</a></small>
+                  , 1 <small class="text-muted"><a href="oracoes-basicas.html#ave-maria">Ave Maria</a></small> e 1 
+                  <small class="text-muted"><a href="oracoes-basicas.html#gloria">Glória</a></small></p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card-body">
+                <h5 class="card-title fw-bolder fst-italic">*Sem latim*</h5>
+                <p class="card-text"> 
+                  Contribua com o site enviado a tradução desta oração em reginasrosarii@gmail.com
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="crux-sacra" class="card lg-3" style="max-width: 1400px;">
+          <div class="row g-0">
+            <div class="col-lg-4 p-xxl-3"">
+              <img src="https://franciscanos.org.br/vidacrista/wp-content/uploads/2019/07/1107-sao-bento.jpg" class="img-fluid rounded-start" " alt="...">
+            </div>
+            <div class="col-md-4">
+              <div class="card-body">
+                <h5 class="card-title fw-bolder">A Cruz Sagrada de São Bento</h5>
+                <p class="card-text">
+                  A Cruz Sagrada seja a minha luz.<br>
+                  Não seja o dragão meu guia.<br>
+                  Retira-te Satanás.<br>
+                   Nunca me aconselhes coisas vãs.<br>
+                  É mal o que tu me ofereces.<br>
+                  Bebe tu mesmo o teu veneno.</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card-body">
+                <h5 class="card-title fw-bolder">Crux Sancti Patris Benedicti!</h5>
+                <p class="card-text"> 
+                  Crux Sacra sit mihi Lux.<br>
+                  Non draco sit mihi dux.<br>
+                  Vade retro satana.<br>
+                  Nunquam suade mihi vana<br>
+                  Sunt mala quae libas.<br>
+                  Ipse venena bibas.<br>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="principe-celeste" class="card lg-3" style="max-width: 1400px;">
+          <div class="row g-0">
+            <div class="col-lg-4 p-xxl-3"">
+              <img src="https://blog.quintadellarte.com.br/wp-content/uploads/2019/09/306480-saiba-mais-sobre-o-dia-de-sao-miguel-arcanjo.jpg" class="img-fluid rounded-start" " alt="...">
+            </div>
+            <div class="col-md-4">
+              <div class="card-body">
+                <h5 class="card-title fw-bolder">Ó príncipe da milícia celeste</h5>
+                <p class="card-text">
+                  Ó príncipe da milícia celeste, São Miguel, tu que lançates no inferno o soberbo Lúcifer com todos os seus seguidores,<br>
+                   tu que és defensor e protetor da Igreja, tu que és protetor das almas que partem deste mundo,<br> 
+                   vinde em socorro do povo de Deus e defenda a Igreja confiada a ti contra todas as ciladas de satanás.<br>
+                    Ajuda a minha alma que agora te recomendo contra este mesmo inimigo. Protege-me na hora da minha morte,<br>
+                     para que eu possa ser admitido nas alegrias do paraíso onde eu, com todos os anjos, possa louvar a Deus eternamente. Amém.</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card-body">
+                <h5 class="card-title fw-bolder">O Princeps caelestis militiae</h5>
+                <p class="card-text"> 
+                  O princeps caelestis militiae, sancte Michael, qui superbum Luciferum cum omnibus suis asseclis in tartarum deiecisti,<br>
+                   o defensor et protector Ecclesiae, o animarum ex hoc saeculo migrantium praeses: succurre populo Dei,<br>
+                   defende Ecclesiam tibi commendatam contra omnes insidias satanae; adiuva animam meam contra eundem hostem constitutam,<br>
+                    quam tibi nunc commendo. Praesertim me in hora mortis meae protege, ut ad paradisi gaudia admittar,<br>
+                     ubi cum omnibus Angelis Deum aeternis laudibus depraedicem. Amen.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      </div>
+
+
+      
+      <footer>
+        <div class="modal-footer p-xxl-3 text-center text-black">
+          <p>Feito por Eules - São Miguel Arcanjo, rogai por nós</p>
+        </div>
+      </footer>
+      
+          <!--scripts-->
+          <script src="bootstrap/js/bootstrap.js"></script>
+          <script src="js/main.js"></script>
+      <script src="js/search.js"></script>
+      <script src="https://kit.fontawesome.com/869daa3fbc.js" crossorigin="anonymous"></script>
+      <script src="bootstrap/js/bootstrap.js"></script>  
+          <script src="js/navSearch.js"></script>
+</body>
+
+</html>
